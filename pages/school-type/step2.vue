@@ -1,13 +1,14 @@
 <template>
     <div>
 
+   
       <!-- popup search -->
       <div v-if='!selectedsubject' class="modal modal--select js-modal modal--is-visible modalblock" id="modal-select" role="dialog" aria-labelledby="modal-select-label" data-animation="on">
          
 
               
                 <div class="vvcenter max-width-xs text-center padding-md" role="alertdialog" tabindex="-1" aria-labelledby="modal-select-title" aria-describedby="">
-                  <h3 class="margin-bottom-sm text-xxxl ls4">請選擇你的科目{{ $route.query.subject }}</h3>
+                  <h3 class="margin-bottom-sm text-xxxl ls4">請選擇你的科目</h3>
                   <!-- steps -->
                   <div class="steps" aria-label="Multi-step indicator">
                     <ol class="steps__list">
@@ -43,8 +44,8 @@
                   <ul class="margin-top-xl text-center full-screen-select__list js-full-screen-select__list" role="listbox">
                   
                     <li v-for='(subject, idx) in showsubjects' v-bind:key="idx">
-                      <a href="#0" v-if='idx==0' class="full-screen-select__option full-screen-select__option--selected" role="option" @click="selectsubject('computer-science')">{{ subject.name }}</a>
-                      <a href="#0" v-if='idx!=0' class="full-screen-select__option" role="option" @click="selectsubject(subject.slug)">{{ subject.name }}</a>
+                      <a :href="frontendurl + 'school-type/university?subject=' + subject.slug" v-if='idx==0' class="full-screen-select__option full-screen-select__option--selected" role="option">{{ subject.name }}</a>
+                      <a :href="frontendurl + 'school-type/university?subject=' + subject.slug" v-if='idx!=0' class="full-screen-select__option" role="option">{{ subject.name }}</a>
                     </li>
                     
                     
@@ -68,8 +69,8 @@
                     <div class="select">
                       <select class="select__input form-control rightfilter" v-model="selectedsubject">
                      
-                          <option v-for='(subject, idx) in showsubjects' v-bind:key="idx" v-bind:value="subject.slug">{{ subject.name }}</option>
-                      
+                          <option value="computer-science">電腦科學</option>
+                          <option value="media-communication">傳播媒體</option>
                                            
                       </select>
                       
@@ -200,8 +201,8 @@
                           <p>{{list.university.excerpt}}</p>
                           </a>
                           <a :href="'/university-school/' + list.university.slug" class="btn  btn--subtle btn--sm">查看大學</a>
-                          <a v-if='list.university.isfoundation' :href="'/university-school/' + list.university.slug" class="margin-left-sm btn btn--primary btn--sm">查看Foundation</a>
-                          <a v-if='list.university.isinternational1' :href="'/university-school/' + list.university.slug" class="margin-left-sm btn btn--accent btn--sm">查看International Year 1</a>
+                          <a :href="'/university-school/' + list.university.slug" class="margin-left-sm btn btn--primary btn--sm">查看Foundation</a>
+                          <a :href="'/university-school/' + list.university.slug" class="margin-left-sm btn btn--accent btn--sm">查看International Year 1</a>
                         </div>
                         <div class="col-5@md">
                           <div class="jschollright padding-top-xs">
@@ -297,13 +298,14 @@
     </div>
 </template>
 
+
 <script>
 export default {
   data(){
     return{
        backendurl : process.env.backendurl,
        frontendurl : process.env.frontendurl,
-       selectedsubject: this.$route.query.subject,
+       selectedsubject: '',
        typequery : '',
        filter1: [],
        sort: 'rankhigh'
