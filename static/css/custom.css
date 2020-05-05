@@ -54,7 +54,7 @@
     z-index: -1;
 }
 .home-popular-subjects.othersubject .innersubject .popular-subjects {
-    padding-top: 4em;
+    padding-top: 0em;
     background:none;
 }
 .innersubject .popular-subjects h4{
@@ -63,7 +63,9 @@
 .innersubject .jsubject-icon svg.jajaja{
     fill: var(--color-primary);
 }
-
+.innersubject {
+    padding-top: 4em;
+}
 .innersubject .jsubject-icon svg{
     fill: var(--color-primary);
 }
@@ -262,15 +264,31 @@ a.nodec{
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 }
+/*
+#newmainsearh .bgmilk{
+    height: 100vh;
+    overflow: scroll;
+    position: fixed;
+}
+
+#newmainsearh .therightj{
+    margin-left: 20%;
+}
+*/
 .home-popular-subjects {
     position: relative;
     
 }
+.othersubject .col-2{
+    text-align: center;
+}
 .popular-subjects h4{
     margin-top: 25px;
+    margin-left: 14px;
 }
 .jsubject-icon{
     position: relative;
+    left: 1.3em;
 }
 .jsubject-icon .hahaha svg{
 position: absolute;
@@ -292,8 +310,8 @@ top: 26px;
 }
 .jsubject-icon svg.jajaja{
     position: relative;
-    top:0px;
-    left: 0px;
+    top:-3px;
+    left: -3px;
     opacity: 0.3;
     transition: opacity 0.3s ease;
     fill: #fff;
@@ -638,7 +656,10 @@ table td{
     margin-left: var(--space-xs);
 }
 .text-component img{
-    width: 100%;
+   margin: 0px;
+}
+.text-component figcaption{
+    text-align: left;
 }
 .text-component .mschool img{
     width: 150px;

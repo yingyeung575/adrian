@@ -322,6 +322,98 @@
             </div>
       </section>
 
+  <section class='padding-y-xl'>
+          <div class="articles">
+              <div class="container max-width-adaptive-lg">
+                <div class="text-center">
+                  <h3 class="margin-bottom-lg">升學攻略</h3>
+                </div>
+                <div class="grid grid-gap-sm">
+                  
+                  <article class="story col-3@md">
+                    <a href="#0" class="story__img">
+                      <figure class="media-wrapper media-wrapper--4:3">
+                        <img src="img/article-gallery-img-1.jpg" alt="Image description">
+                      </figure>
+                    </a>
+            
+                    <div class="story__content">
+                      
+              
+                      <div class="text-component">
+                        <h4 class="story__title padding-bottom-xs">Lorem ipsum dolor sit amet consectetur</h4>
+                        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum</p>
+                        <span class="text-sm knowmore">了解更多</span>
+                      </div>
+              
+                      
+                    </div>
+                  </article>
+                  <article class="story col-3@md">
+                    <a href="#0" class="story__img">
+                      <figure class="media-wrapper media-wrapper--4:3">
+                        <img src="img/article-gallery-img-1.jpg" alt="Image description">
+                      </figure>
+                    </a>
+            
+                    <div class="story__content">
+                      
+              
+                      <div class="text-component">
+                        <h4 class="story__title padding-bottom-xs">Lorem ipsum dolor sit amet consectetur</h4>
+                        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum</p>
+                        <span class="text-sm knowmore">了解更多</span>
+                      </div>
+              
+                      
+                    </div>
+                  </article>
+                  <article class="story col-3@md">
+                    <a href="#0" class="story__img">
+                      <figure class="media-wrapper media-wrapper--4:3">
+                        <img src="img/article-gallery-img-1.jpg" alt="Image description">
+                      </figure>
+                    </a>
+            
+                    <div class="story__content">
+                      
+              
+                      <div class="text-component">
+                        <h4 class="story__title padding-bottom-xs">Lorem ipsum dolor sit amet consectetur</h4>
+                        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum</p>
+                        <span class="text-sm knowmore">了解更多</span>
+                      </div>
+              
+                      
+                    </div>
+                  </article>
+                  <article class="story col-3@md">
+                    <a href="#0" class="story__img">
+                      <figure class="media-wrapper media-wrapper--4:3">
+                        <img src="img/article-gallery-img-1.jpg" alt="Image description">
+                      </figure>
+                    </a>
+            
+                    <div class="story__content">
+                      
+              
+                      <div class="text-component">
+                        <h4 class="story__title padding-bottom-xs">Lorem ipsum dolor sit amet consectetur</h4>
+                        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum</p>
+                        <span class="text-sm knowmore">了解更多</span>
+                      </div>
+              
+                      
+                    </div>
+                  </article>
+                                  
+                  <p class='text-center'> <button class="margin-top-lg btn btn--primary">查看更多</button></p>
+
+                </div>
+
+              </div>
+            </div>
+      </section>
       <section class="team bg-contrast-lower padding-y-xl">
       <div class="container max-width-adaptive-lg">
         <div class="margin-bottom-lg">

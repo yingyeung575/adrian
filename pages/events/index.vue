@@ -16,17 +16,17 @@
       <section id='jtalk' class="padding-bottom-xxl">
         <div class="container max-width-adaptive-lg">
           <div class="grid grid-gap-md">
-            <div class="col-4@md">
+            <div class="col-4@md" v-for="(article, idx) in filteredarticles" v-bind:key="idx">
                 <div class="card-v3 text-center ">
-                    <a href="/events/testing" class="card-v3__link" aria-label="Description of the link">
+                    <a :href="frontendurl+'events/'+article.slug" class="card-v3__link" aria-label="Description of the link">
                         <figure class="card-v3__img">
-                            <img src="/img/card-v3-img-2.jpg" alt="Card preview img">
+                            <img width='200' v-if='article.thumbnail' :src="backendurl + article.thumbnail.url">
                           </figure>
                     
                       <div class="card-v3__content">
-                        <div class="card-v3__label2 text-md color-accent">22/02/2020</div>
-                        <div class="card-v3__label">11:00-12:00</div>
-                        <h3 class='text-md'>【英國升學專題講座】去英國考A Level 比香港考HKDSE 容易？</h3>
+                        <div class="card-v3__label2 text-md color-accent">{{ article.date }}</div>
+                        <div class="card-v3__label">{{ article.time }}</div>
+                        <h3 class='text-md'>{{ article.title }}</h3>
                       </div>
 
                       
@@ -39,108 +39,45 @@
                     </a>
                 </div>  
             </div>
-            <div class="col-4@md">
-                <div class="card-v3 text-center ">
-                    <a href="#0" class="card-v3__link" aria-label="Description of the link">
-                        <figure class="card-v3__img">
-                            <img src="/img/card-v3-img-2.jpg" alt="Card preview img">
-                          </figure>
-                    
-                      <div class="card-v3__content">
-                        <div class="card-v3__label2 text-md color-accent">22/02/2020</div>
-                        <div class="card-v3__label">11:00-12:00</div>
-                        <h3 class='text-md'>【英國升學專題講座】去英國考A Level 比香港考HKDSE 容易？</h3>
-                      </div>
-                  
-                      <div class="card-v3__footer">
-                        <span>了解更多</span>
-                        <svg class="icon" viewBox="0 0 16 16"><g fill="none" stroke-width="1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><line x1="0.5" y1="8.5" x2="15.5" y2="8.5"></line><polyline points="10.5,3.5 15.5,8.5 10.5,13.5 "></polyline></g></svg>
-                      </div>
-                    </a>
-                </div>  
-            </div>
-            <div class="col-4@md">
-                <div class="card-v3 text-center ">
-                    <a href="#0" class="card-v3__link" aria-label="Description of the link">
-                        <figure class="card-v3__img">
-                            <img src="/img/card-v3-img-2.jpg" alt="Card preview img">
-                          </figure>
-                    
-                      <div class="card-v3__content">
-                        <div class="card-v3__label2 text-md color-accent">22/02/2020</div>
-                        <div class="card-v3__label">11:00-12:00</div>
-                        <h3 class='text-md'>【英國升學專題講座】去英國考A Level 比香港考HKDSE 容易？</h3>
-                      </div>
-                  
-                      <div class="card-v3__footer">
-                        <span>了解更多</span>
-                        <svg class="icon" viewBox="0 0 16 16"><g fill="none" stroke-width="1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><line x1="0.5" y1="8.5" x2="15.5" y2="8.5"></line><polyline points="10.5,3.5 15.5,8.5 10.5,13.5 "></polyline></g></svg>
-                      </div>
-                    </a>
-                </div>  
-            </div>
-            <div class="col-4@md">
-                <div class="card-v3 text-center ">
-                    <a href="#0" class="card-v3__link" aria-label="Description of the link">
-                        <figure class="card-v3__img">
-                            <img src="/img/card-v3-img-2.jpg" alt="Card preview img">
-                          </figure>
-                    
-                      <div class="card-v3__content">
-                        <div class="card-v3__label2 text-md color-accent">22/02/2020</div>
-                        <div class="card-v3__label">11:00-12:00</div>
-                        <h3 class='text-md'>【英國升學專題講座】去英國考A Level 比香港考HKDSE 容易？</h3>
-                      </div>
-                  
-                      <div class="card-v3__footer">
-                        <span>了解更多</span>
-                        <svg class="icon" viewBox="0 0 16 16"><g fill="none" stroke-width="1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><line x1="0.5" y1="8.5" x2="15.5" y2="8.5"></line><polyline points="10.5,3.5 15.5,8.5 10.5,13.5 "></polyline></g></svg>
-                      </div>
-                    </a>
-                </div>  
-            </div>
+         
 
-            <nav class="pagination margin-top-xl" aria-label="Pagination">
-              <ol class="pagination__list flex flex-wrap flex-gap-xxs justify-center">
-                <li>
-                  <a href="#0" class="pagination__item pagination__item--disabled" aria-label="Go to previous page">
-                    <svg class="icon margin-right-xxxs" aria-hidden="true" viewBox="0 0 16 16"><title>Previous</title><g stroke-width="1" stroke="currentColor"><polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="9.5,3.5 5,8 9.5,12.5 "></polyline></g></svg>
-                    <span>Prev</span>
-                  </a>
-                </li>
-        
-                <li class="display@sm">
-                  <a href="#0" class="pagination__item" aria-label="Go to page 1">1</a>
-                </li>
-        
-                <li class="display@sm">
-                  <a href="#0" class="pagination__item" aria-label="Go to page 2">2</a>
-                </li>
-        
-                <li class="display@sm">
-                  <a href="#0" class="pagination__item pagination__item--selected" aria-label="Current Page, page 3" aria-current="page">3</a>
-                </li>
-        
-                <li class="display@sm">
-                  <a href="#0" class="pagination__item" aria-label="Go to page 4">4</a>
-                </li>
-        
-                <li class="display@sm" aria-hidden="true">
-                  <span class="pagination__item pagination__item--ellipsis">...</span>
-                </li>
-        
-                <li class="display@sm">
-                  <a href="#0" class="pagination__item" aria-label="Go to page 20">20</a>
-                </li>
-        
-                <li>
-                  <a href="#0" class="pagination__item" aria-label="Go to next page">
-                    <span>Next</span>
-                    <svg class="icon margin-left-xxxs" aria-hidden="true" viewBox="0 0 16 16"><title>Next</title><g stroke-width="1" stroke="currentColor"><polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="6.5,3.5 11,8 6.5,12.5 "></polyline></g></svg>
-                  </a>
-                </li>
-              </ol>
-            </nav>
+         <nav v-if='maxpage!=1 && maxpage!=0' class="pagination margin-top-xxl" aria-label="Pagination">
+                        <ol class="pagination__list flex flex-wrap flex-gap-xxs justify-center">
+                          <li>
+                            <a v-if='currentPage!=1' v-bind:href="backlink" class="pagination__item" aria-label="Go to previous page">
+                              <svg class="icon margin-right-xxxs" aria-hidden="true" viewBox="0 0 16 16"><title>Previous</title><g stroke-width="1" stroke="currentColor"><polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="9.5,3.5 5,8 9.5,12.5 "></polyline></g></svg>
+                              <span>上一頁</span>
+                            </a>
+                          </li>
+                  
+                        <!--  <li v-if='maxpage - $route.query.page < 2' class="display@sm" aria-hidden="true">
+                            <span class="pagination__item pagination__item--ellipsis">...</span>
+                          </li> -->
+
+                          <span class="display@sm" v-for='id in maxpage' v-bind:key="id">
+                          
+                          <li v-if='id - currentPage>= 1 && id - currentPage < 3' >
+                            <a :href="gopage(id)" class="pagination__item">{{id}}</a>
+                          </li>
+                          <li v-if='id == currentPage' >
+                            <a :href="gopage(id)" class="pagination__item pagination__item--selected">{{id}}</a>
+                          </li>
+                          </span>
+
+                          <li v-if='maxpage - currentPage > 2' class="display@sm" aria-hidden="true">
+                            <span class="pagination__item pagination__item--ellipsis">...</span>
+                          </li>
+                  
+                         
+                  
+                          <li>
+                            <a v-if='currentPage!=maxpage' v-bind:href="nextlink" class="pagination__item" aria-label="Go to next page">
+                              <span>下一頁</span>
+                              <svg class="icon margin-left-xxxs" aria-hidden="true" viewBox="0 0 16 16"><title>Next</title><g stroke-width="1" stroke="currentColor"><polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="6.5,3.5 11,8 6.5,12.5 "></polyline></g></svg>
+                            </a>
+                          </li>
+                        </ol>
+                      </nav>
 
           </div>
 
@@ -149,3 +86,59 @@
 
     </div>
 </template>
+
+
+<script>  
+export default {  
+  data(){
+    return{
+       backendurl : process.env.backendurl,
+       frontendurl : process.env.frontendurl,
+       noofpost: 10
+    }
+  },
+  async asyncData({ $axios,query }) {
+    let thepage = 0
+    if (query.page)
+      thepage = (query.page-1)*10
+    const articles = await $axios.$get(process.env.backendurl+'talks?_limit=10&_start='+ thepage)
+    const noarticles = await $axios.$get(process.env.backendurl+'talks/count')
+    return { articles,noarticles }
+  },
+  methods:{
+    gopage( para ){
+      return '/case-analysis?page=' + para
+    },
+  },
+  computed: {
+
+    backlink(){
+      let backpageno = parseInt(this.$route.query.page) - 1
+      return '/case-analysis?page=' + backpageno
+    },
+    nextlink(){
+      let nextpageno = 2
+      if (this.$route.query.page)
+        nextpageno = parseInt(this.$route.query.page) + 1
+      return '/case-analysis?page=' + nextpageno
+    },
+    maxpage(){
+   
+      if ((this.noarticles)%this.noofpost==0)
+        return parseInt((this.noarticles)/this.noofpost)
+      else 
+      return parseInt((this.noarticles)/this.noofpost+1)
+    },
+    currentPage(){
+      if (this.$route.query.page)
+        return this.$route.query.page
+      else
+        return 1
+    },
+    filteredarticles(){
+      return this.articles
+    }
+  }
+  
+}
+</script> 

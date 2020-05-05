@@ -75,8 +75,12 @@
             </div>
           </div>
         </div>
-      
-        <div role="application" class="google-maps google-maps--ratio-3:1 margin-top-lg js-google-maps" data-coordinates="51.5658015,-0.40339"><!-- Google Map --></div>
+
+        <div class="responsive-iframe margin-top-xxl">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.812216421877!2d114.15334435045449!3d22.28510208525946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404007ccc6342a1%3A0x33348c978cb0fc56!2sFar%20East%20Consortium%20Building%2C%20113-125A%20Des%20Voeux%20Rd%20Central%2C%20Central!5e0!3m2!1sen!2shk!4v1588653827845!5m2!1sen!2shk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        
+    
       </section>
 
 

@@ -69,11 +69,11 @@
       
                 <ul class="f-header__dropdown">
                   <li><a href="/clearing/international-year-one" class="f-header__dropdown-link">國際一年級專區</a></li>
-                  <li><a href="#0" class="f-header__dropdown-link">Arts & Desgin專區</a></li>
-                  <li><a href="#0" class="f-header__dropdown-link">大學基礎班專區</a></li>
-                  <li><a href="#0" class="f-header__dropdown-link">法律及政治學重點推介</a></li>
-                  <li><a href="#0" class="f-header__dropdown-link">寄宿學校知多D</a></li>
-                  <li><a href="#0" class="f-header__dropdown-link">高中學生出路</a></li>
+                  <li><a href="/clearing/art-and-design" class="f-header__dropdown-link">Arts & Desgin專區</a></li>
+                  <li><a href="/clearing/foundation" class="f-header__dropdown-link">大學基礎班專區</a></li>
+                  <li><a href="/clearing/law" class="f-header__dropdown-link">法律及政治學重點推介</a></li>
+                  <li><a href="/clearing/way" class="f-header__dropdown-link">寄宿學校知多D</a></li>
+                  <li><a href="/clearing/boarding-school" class="f-header__dropdown-link">高中學生出路</a></li>
                 </ul>
             </li>
               <li class="f-header__item">

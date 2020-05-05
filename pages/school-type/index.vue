@@ -44,8 +44,8 @@
                   
 
                     <li><a href="#0" class="full-screen-select__option full-screen-select__option--selected" role="option">大學基礎班</a></li>
-                    <li><a href="#0" class="full-screen-select__option" role="option">寄宿學校</a></li>
-                    <li><a href="/school-type/step2" class="full-screen-select__option" role="option">大學</a></li>
+                    <li><a href="/school-type/boarding-school" class="full-screen-select__option" role="option">寄宿學校</a></li>
+                    <li><a href="/school-type/university/step2" class="full-screen-select__option" role="option">大學</a></li>
                     <li><a href="#0" class="full-screen-select__option" role="option">國際一年級</a></li>
                     <li><a href="#0" class="full-screen-select__option" role="option">夏季學校</a></li>
 

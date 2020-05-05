@@ -5,7 +5,7 @@
                     <div class="grid grid-gap-md">
                       <div class="col-8@md">
 
-                            <a href='/school-type/university' class="hjhj text-sm">< 返回</a>
+                            <a href='/school-type/boarding-school' class="hjhj text-sm">< 返回</a>
          
                             <div>
    
@@ -357,7 +357,7 @@ data(){
     }
   },
   async asyncData({ $axios, params }) {
-    const articles = await $axios.$get(process.env.backendurl+'universities?slug='+params.slug)
+    const articles = await $axios.$get(process.env.backendurl+'boarding-schools?slug='+params.slug)
     let article = articles[0];
     return { article }
   },

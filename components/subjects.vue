@@ -1,7 +1,7 @@
 <template>
     <div>
                               <!-- subjects-->
-                      <div class="max-width-adaptive-lg container margin-bottom-xl ">
+                      <div class="max-width-adaptive-lg  container margin-bottom-xl ">
                       <div class="grid justify-center bg-contrast-lower innersubject padding-bottom-xl"> 
              
                                                          <div class="col-2" v-for='(subject,idx) in subjectobject' v-bind:key='idx'>
