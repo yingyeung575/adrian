@@ -8,7 +8,8 @@
                                 <img v-if='article.author' class='circle' :src='backendurl + article.author.profile.url' width="150">
                                 <div class="margin-auto showbox bg-contrast-lower margin-bottom-sm">
                                     <h4 v-if='article.author' class="text-md color-primary margin-bottom-sm">升學顧問：{{ article.author.name }}</h4>
-                                    <p v-if='article.author' class="text-sm">{{ article.author.slogan }}</p>
+                                    <p v-if='article.author && !article.consultantcomment' class="text-sm">{{ article.author.slogan }}</p>
+                                    <p v-if='article.author && article.consultantcomment' class="text-sm">{{ article.consultantcomment }}</p>
                                     <a href="#0" class="margin-top-sm width-100% btn btn--accent">預約免費諮詢</a>
                                 </div>
                                 <a href="" class=" width-100% color-black">下載科目排名表 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M16 11h5l-9 10-9-10h5v-11h8v11zm1 11h-10v2h10v-2z"></path></svg></a>
@@ -31,7 +32,7 @@
                                             <img v-if='article.image' style='margin:0' width='300' :src="backendurl + article.image.url">
                                         </figure>
                                     <h1>{{ article.name }}</h1>
-                                    <p class="text-italic">最後更新日期：May 10, 2020</p>
+                                    <p class="text-italic">最後更新日期：{{ jdate }}</p>
                                    <!-- <p class="color-contrast-medium text-md">
                                         學生：Edward<br>
                                         入讀學校：University of Liverpool International College <br>就讀科目：Engineering Foundation</p> -->
@@ -105,5 +106,12 @@ export default {
     let article = articles[0];
     return { article,subjectss }
   },
+  computed:{
+    jdate(){
+      var d = new Date();
+      d.setDate(d.getDate() - 2);
+      return d.toISOString().substring(0, 10)
+    }
+  }
 }
 </script> 

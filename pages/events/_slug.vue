@@ -16,7 +16,8 @@
                           <img class='circle' width="150" v-if='article.author' :src="backendurl + article.author.profile.url">
                           <div class="margin-auto showbox bg-contrast-lower">
                               <h4 v-if='article.author' class="text-md color-primary margin-bottom-sm">{{ article.author.name }}</h4>
-                              <p v-if='article.author' class="text-sm">{{ article.author.slogan }}</p>
+                              <p v-if='article.author && !article.consultantcomment' class="text-sm">{{ article.author.slogan }}</p>
+                              <p v-if='article.author && article.consultantcomment' class="text-sm">{{ article.consultantcomment }}</p>
                               </div>
                           </div>
                         </div>

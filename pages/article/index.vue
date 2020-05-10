@@ -140,7 +140,7 @@ export default {
     let thepage = 0
     if (query.page)
       thepage = (query.page-1)*10
-    const articles = await $axios.$get(process.env.backendurl+'articles?_limit=10&_start='+ thepage)
+    const articles = await $axios.$get(process.env.backendurl+'articles?_limit=10&_start='+ thepage + '&_sort=date:DESC')
     const categories = await $axios.$get(process.env.backendurl+'categories')
     const noarticles = await $axios.$get(process.env.backendurl+'articles/count')
     return { articles,noarticles,categories }

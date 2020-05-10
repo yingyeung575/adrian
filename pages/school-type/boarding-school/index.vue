@@ -285,15 +285,18 @@
                           <div class="jschollright padding-top-xs">
                             <div class="showstat" style="padding-left:1em">
                               <h4 class="text-sm">A Level (A*-A)</h4>
-                              <h3 class='text-xl jthebg color-accent'>{{ list.alevel }}%</h3>
+                              <h3 v-if='!list.alevel' class='text-xl jthebg color-accent text-center'>-</h3>
+                              <h3 v-if='list.alevel' class='text-xl jthebg color-accent'>{{ list.alevel }}%</h3>
                             </div>
                             <div class="showstat">
-                              <h4 class="text-sm">GCSE (A*-A)</h4>
-                              <h3 class='text-xl jthebg color-accent'>{{ list.gcse }}%</h3>                             
+                              <h4   class="text-sm">GCSE (A*-A)</h4>
+                              <h3 v-if='list.gcse' class='text-xl jthebg color-accent'>{{ list.gcse }}%</h3>    
+                              <h3 v-if='!list.gcse' class='text-xl jthebg color-accent text-center'>- </h3>                            
                             </div>
                             <div class="showstat">
                               <h4 class="text-sm">寄宿比例</h4>
-                              <h3 class='text-xl jthebg color-accent'>{{ list.boardingpercentage }}%</h3>              
+                              <h3 v-if='list.boardingpercentage' class='text-xl jthebg color-accent'>{{ list.boardingpercentage }}%</h3>              
+                              <h3 v-if='!list.boardingpercentage' class='text-xl jthebg color-accent text-center'>-</h3>   
                             </div>
                             <div class="bg-contrast-lower padding-sm" style="padding-left:1.5em">
                               <span><strong>學費預算：</strong>{{list.schoolfee}}

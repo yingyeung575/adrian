@@ -264,6 +264,13 @@ a.nodec{
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 }
+.text-component h3, .text-component h4{
+    color: var(--color-primary);
+}
+.tablemargin.table{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
 /*
 #newmainsearh .bgmilk{
     height: 100vh;

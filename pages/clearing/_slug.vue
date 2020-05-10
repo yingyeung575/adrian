@@ -45,7 +45,8 @@
                   
                         <div class="author__content text-component v-space-xxs">
                           <h4 v-if='article.author' class="">{{ article.author.name }}</h4>
-                          <p v-if='article.author' class="padding-top-sm color-contrast-medium text-sm">{{ article.author.slogan }}</p>
+                          <p v-if='article.author && !article.consultantcomment' class="text-sm">{{ article.author.slogan }}</p>
+                          <p v-if='article.author && article.consultantcomment' class="text-sm">{{ article.consultantcomment }}</p>
                          
                         </div>
                       </div>

@@ -35,7 +35,7 @@
                                   
                                     <h3>學校簡介</h3>
 
-                                        <p class="text-italic">最後更新日期：May 10, 2020</p>
+                                        <p class="text-italic">最後更新日期：{{ jdate }}</p>
 
                                         <div v-bind:key='idy' v-for='(content, idy) in article.maincontent'>
                                             <div v-if="content.text" v-html="$md.render(content.text)"> </div> 
@@ -361,6 +361,13 @@ data(){
     let article = articles[0];
     return { article }
   },
+  computed:{
+    jdate(){
+      var d = new Date();
+      d.setDate(d.getDate() - 2);
+      return d.toISOString().substring(0, 10)
+    }
+  }
 
 }
 

@@ -86,7 +86,7 @@
                     <li><a href="/category/way" class="f-header__dropdown-link">銜接英國方法</a></li>
                     <li><a href="/category/structure" class="f-header__dropdown-link">英國學制</a></li>
                     <li><a href="/category/procedure" class="f-header__dropdown-link">報名程序</a></li>
-                    <li><a href="/category/life" class="f-header__dropdown-link">衣食住行</a></li>
+                    <li><a href="/category/video" class="f-header__dropdown-link">影片教學</a></li>
                     <li><a href="/category/sharings" class="f-header__dropdown-link">留學生分享</a></li>
                     <li><a href="/rank-school" class="f-header__dropdown-link">大學排名表</a></li>
                     <li><a href="/rank-subject" class="f-header__dropdown-link">科目排名表</a></li>
