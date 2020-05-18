@@ -25,13 +25,13 @@
           <div class='container max-width-lg'>
 
             <div class="margin-bottom-lg">
-                    <a href="#0" class="btn btn--subtle margin-right-md">
+                    <a href="/rank-school" class="btn btn--subtle margin-right-md">
                             大學排名表
                     </a>
-                    <a href="#0" class="btn btn--subtle margin-right-md">
+                    <a href="/rank-boarding" class="btn btn--subtle margin-right-md">
                             寄宿學校排名表
                     </a>
-                    <a href="#0" class="btn btn--primary">
+                    <a href="/rank-subject" class="btn btn--primary">
                             科目排名表
                     </a>
             </div>

@@ -89,6 +89,7 @@
                     <li><a href="/category/video" class="f-header__dropdown-link">影片教學</a></li>
                     <li><a href="/category/sharings" class="f-header__dropdown-link">留學生分享</a></li>
                     <li><a href="/rank-school" class="f-header__dropdown-link">大學排名表</a></li>
+                    <li><a href="/rank-boarding" class="f-header__dropdown-link">寄宿學校排名表</a></li>
                     <li><a href="/rank-subject" class="f-header__dropdown-link">科目排名表</a></li>
                   
                   </ul>

@@ -25,10 +25,10 @@
           <div class='container max-width-lg'>
 
             <div class="margin-bottom-lg">
-                    <a href="/rank-school" class="btn btn--primary margin-right-md">
+                    <a href="/rank-school" class="btn btn--subtle margin-right-md">
                             大學排名表
                     </a>
-                    <a href="/rank-boarding" class="btn btn--subtle margin-right-md">
+                    <a href="/rank-boarding" class="btn btn--primary margin-right-md">
                             寄宿學校排名表
                     </a>
                     <a href="/rank-subject" class="btn btn--subtle">
@@ -46,7 +46,7 @@
               
                         <th class="int-table__cell int-table__cell--th int-table__cell--sort js-int-table__cell--sort">
                           <div class="items-center">
-                            <span>英國大學綜合排名</span>
+                            <span>LinkedU 排名</span>
                     
                             <svg class="icon icon--xxs margin-left-xxxs int-table__sort-icon" aria-hidden="true" viewBox="0 0 12 12"><polygon class="arrow-up" points="6 0 10 5 2 5 6 0"/><polygon class="arrow-down" points="6 12 2 7 10 7 6 12"/></svg>
                           </div>
@@ -71,7 +71,7 @@
               
                         <th class="int-table__cell int-table__cell--th int-table__cell--sort js-int-table__cell--sort">
                           <div class="items-center">
-                            <span>大學名稱</span>
+                            <span>學校名稱</span>
                     
                             <svg class="icon icon--xxs margin-left-xxxs int-table__sort-icon" aria-hidden="true" viewBox="0 0 12 12"><polygon class="arrow-up" points="6 0 10 5 2 5 6 0"/><polygon class="arrow-down" points="6 12 2 7 10 7 6 12"/></svg>
                           </div>
@@ -96,7 +96,7 @@
               
                         <th class="int-table__cell int-table__cell--th int-table__cell--sort js-int-table__cell--sort">
                           <div class="flex items-center">
-                            <span>學費</span>
+                            <span>地區</span>
                     
                             <svg class="icon icon--xxs margin-left-xxxs int-table__sort-icon" aria-hidden="true" viewBox="0 0 12 12"><polygon class="arrow-up" points="6 0 10 5 2 5 6 0"/><polygon class="arrow-down" points="6 12 2 7 10 7 6 12"/></svg>
                           </div>
@@ -120,7 +120,7 @@
                         </th>
                         <th class="int-table__cell int-table__cell--th int-table__cell--sort js-int-table__cell--sort">
                                 <div class="items-center">
-                                  <span>A-Level 收生標準</span>
+                                  <span>學校類別</span>
                           
                                   <svg class="icon icon--xxs margin-left-xxxs int-table__sort-icon" aria-hidden="true" viewBox="0 0 12 12"><polygon class="arrow-up" points="6 0 10 5 2 5 6 0"/><polygon class="arrow-down" points="6 12 2 7 10 7 6 12"/></svg>
                                 </div>
@@ -144,7 +144,7 @@
                         </th>
                         <th class="int-table__cell int-table__cell--th int-table__cell--sort js-int-table__cell--sort">
                                 <div class="items-center">
-                                  <span>HKDSE 收生標準</span>
+                                  <span>學費</span>
                           
                                   <svg class="icon icon--xxs margin-left-xxxs int-table__sort-icon" aria-hidden="true" viewBox="0 0 12 12"><polygon class="arrow-up" points="6 0 10 5 2 5 6 0"/><polygon class="arrow-down" points="6 12 2 7 10 7 6 12"/></svg>
                                 </div>
@@ -168,7 +168,7 @@
                         </th>
                         <th class="int-table__cell int-table__cell--th int-table__cell--sort js-int-table__cell--sort">
                                 <div class="items-center">
-                                  <span>接受Advance Entry (Year 2)</span>
+                                  <span>學生人數</span>
                           
                                   <svg class="icon icon--xxs margin-left-xxxs int-table__sort-icon" aria-hidden="true" viewBox="0 0 12 12"><polygon class="arrow-up" points="6 0 10 5 2 5 6 0"/><polygon class="arrow-down" points="6 12 2 7 10 7 6 12"/></svg>
                                 </div>
@@ -192,7 +192,7 @@
                         </th>
                         <th class="int-table__cell int-table__cell--th int-table__cell--sort js-int-table__cell--sort">
                                 <div class="items-center">
-                                  <span>接受Advance Entry (Year 3)</span>
+                                  <span>寄宿學生比例</span>
                           
                                   <svg class="icon icon--xxs margin-left-xxxs int-table__sort-icon" aria-hidden="true" viewBox="0 0 12 12"><polygon class="arrow-up" points="6 0 10 5 2 5 6 0"/><polygon class="arrow-down" points="6 12 2 7 10 7 6 12"/></svg>
                                 </div>
@@ -216,7 +216,7 @@
                         </th>
                         <th class="int-table__cell int-table__cell--th int-table__cell--sort js-int-table__cell--sort">
                                 <div class="items-center">
-                                  <span>提供大學基礎班</span>
+                                  <span>GCSE 7 - 9 (%)</span>
                           
                                   <svg class="icon icon--xxs margin-left-xxxs int-table__sort-icon" aria-hidden="true" viewBox="0 0 12 12"><polygon class="arrow-up" points="6 0 10 5 2 5 6 0"/><polygon class="arrow-down" points="6 12 2 7 10 7 6 12"/></svg>
                                 </div>
@@ -240,7 +240,7 @@
                         </th>
                         <th class="int-table__cell int-table__cell--th int-table__cell--sort js-int-table__cell--sort">
                                 <div class="items-center">
-                                  <span>提供國際一年級</span>
+                                  <span>A Level A - A* (%)</span>
                           
                                   <svg class="icon icon--xxs margin-left-xxxs int-table__sort-icon" aria-hidden="true" viewBox="0 0 12 12"><polygon class="arrow-up" points="6 0 10 5 2 5 6 0"/><polygon class="arrow-down" points="6 12 2 7 10 7 6 12"/></svg>
                                 </div>
@@ -272,25 +272,13 @@
                         
                         <td class="int-table__cell">{{ board.rank }}</td>
                         <td class="int-table__cell"><a v-if='board.link' :href="frontendurl + board.link">{{ board.name }}</a><span v-if='!board.link'>{{ board.name }}</span></td>
+                        <td class="int-table__cell">{{ board.district }}</td>
+                        <td class="int-table__cell">{{ board.type }}</td>
                         <td class="int-table__cell">{{ board.fee }}</td>
+                        <td class="int-table__cell">{{ board.noofstudents }}</td>
+                        <td class="int-table__cell">{{ board.percentage }}</td>
+                        <td class="int-table__cell">{{ board.cgse }}</td>
                         <td class="int-table__cell">{{ board.alevel }}</td>
-                        <td class="int-table__cell">{{ board.hkdse }}</td>
-                        <td class="int-table__cell">
-                           <svg v-if='board.adventry2' xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.959 17l-4.5-4.319 1.395-1.435 3.08 2.937 7.021-7.183 1.422 1.409-8.418 8.591z"/></svg>
-                           <svg v-if='!board.adventry2' xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.538l-4.592-4.548 4.546-4.587-1.416-1.403-4.545 4.589-4.588-4.543-1.405 1.405 4.593 4.552-4.547 4.592 1.405 1.405 4.555-4.596 4.591 4.55 1.403-1.416z"/></svg>
-                        </td>
-                        <td class="int-table__cell">
-                           <svg v-if='board.adventry3' xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.959 17l-4.5-4.319 1.395-1.435 3.08 2.937 7.021-7.183 1.422 1.409-8.418 8.591z"/></svg>
-                           <svg v-if='!board.adventry3' xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.538l-4.592-4.548 4.546-4.587-1.416-1.403-4.545 4.589-4.588-4.543-1.405 1.405 4.593 4.552-4.547 4.592 1.405 1.405 4.555-4.596 4.591 4.55 1.403-1.416z"/></svg>
-                        </td>
-                        <td class="int-table__cell">
-                           <svg v-if='board.foundation' xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.959 17l-4.5-4.319 1.395-1.435 3.08 2.937 7.021-7.183 1.422 1.409-8.418 8.591z"/></svg>
-                           <svg v-if='!board.foundation' xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.538l-4.592-4.548 4.546-4.587-1.416-1.403-4.545 4.589-4.588-4.543-1.405 1.405 4.593 4.552-4.547 4.592 1.405 1.405 4.555-4.596 4.591 4.55 1.403-1.416z"/></svg>
-                        </td>
-                        <td class="int-table__cell">
-                           <svg v-if='board.international1' xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.959 17l-4.5-4.319 1.395-1.435 3.08 2.937 7.021-7.183 1.422 1.409-8.418 8.591z"/></svg>
-                           <svg v-if='!board.international1' xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.538l-4.592-4.548 4.546-4.587-1.416-1.403-4.545 4.589-4.588-4.543-1.405 1.405 4.593 4.552-4.547 4.592 1.405 1.405 4.555-4.596 4.591 4.55 1.403-1.416z"/></svg>
-                        </td>
                        
                       </tr>
                                  
@@ -342,7 +330,7 @@ export default {
     }
   },
   async asyncData({ $axios }) {
-    const articles = await $axios.$get(process.env.backendurl+'rankinguniversities')
+    const articles = await $axios.$get(process.env.backendurl+'rankingboardings')
     return { articles }
   },
 }

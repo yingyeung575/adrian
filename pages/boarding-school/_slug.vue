@@ -5,7 +5,7 @@
                     <div class="grid grid-gap-md">
                       <div class="col-8@md">
 
-                            <a href='/school-type/boarding-school' class="hjhj text-sm">< 返回</a>
+                            <a @click='goback' class="hjhj text-sm">< 返回</a>
          
                             <div>
    
@@ -505,6 +505,11 @@ data(){
       var d = new Date();
       d.setDate(d.getDate() - 2);
       return d.toISOString().substring(0, 10)
+    }
+  },
+  methods:{
+    goback(){
+      this.$router.go(-1)
     }
   }
 

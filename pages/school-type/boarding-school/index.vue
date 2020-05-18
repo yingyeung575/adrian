@@ -268,9 +268,9 @@
             
             <div class="text-component">
 
-              <div class='mschool' v-for='(list,idx) in filteredList' v-bind:key="idx">
-                  
-                    <div class="grid grid-gap-md">
+              <div v-for='(list,idx) in filteredList' v-bind:key="idx">
+                  <div class='mschool' v-if='showing > idx'>
+                    <div class="grid grid-gap-md" >
                         <div class="text-left col-7@md padding-y-md padding-x-lg">
                           <a class='nodecor' :href="'/boarding-school/' + list.slug">
                           <img :src='backendurl  + list.image.url' width='100' v-if='list.image'>
@@ -310,7 +310,7 @@
                           </div>
                         </div>
                     </div>
-                 
+                  </div>
                 </div>
                 <!-- end mschool -->
                
@@ -358,7 +358,10 @@
                     </ol>
                   </nav>
                   -->
-
+                   <div v-if='arraylength > showing' class="width-100 text-center padding-bottom-lg" @click='showmore'>
+                   <a class="btn btn--accent">顯示更多</a>
+                   <br>
+                   </div>
                    <p class='noresult padding-top-sm padding-left-sm text-md' v-if="filteredList==''">不好意思，沒有找到相關結果</p>
 
 
@@ -377,6 +380,7 @@
 </template>
 
 <script>
+import Cookies from 'js-cookie'
 export default {
   data(){
     return{
@@ -385,7 +389,9 @@ export default {
        selectedsubject: this.$route.query.subject,
        typequery : '',
        filter1: [],
-       sort: 'feelow'
+       sort: 'feelow',
+       showing: 10,
+       arraylength: 0
 
     }
   },
@@ -394,6 +400,9 @@ export default {
     return { universities }
   },
   methods:{
+    showmore(){
+      this.showing = this.showing + 10
+    },
     checkcount( temp2 ) {
        
         
@@ -407,7 +416,7 @@ export default {
               let z = true
               if (temp2 != '') {
                 z = x.optionboarding.find(element => {
-                  return temp2.includes(element.name)  
+                  return temp2 == element.name
                 })
               }
               /* new checkbox filter check */
@@ -445,6 +454,7 @@ export default {
           }
         ) 
 
+        this.arraylength = funiversities.length
         /* sorting */
 
         if (this.sort=='feelow'){
@@ -482,10 +492,31 @@ export default {
         }
         /* sorting */
 
+ 
+
         return funiversities
       
     },
+  },
+  /*
+  updated: function(){
+   
+    Cookies.set('boardingschoolTypequery', this.typequery) 
+    Cookies.set('boardingschoolFilter1', this.filter1)
+
+  },
+  beforeMount: function(){
+
+    if (Cookies.get('boardingschoolTypequery'))
+     this.typequery = Cookies.get('boardingschoolTypequery')
+    if (Cookies.get('boardingschoolFilter1')){
+     let tempFilter = JSON.parse(Cookies.get('boardingschoolFilter1'))
+     this.filter1 = tempFilter
+    }
+
+   
   }
+  */
 }
 
 </script>

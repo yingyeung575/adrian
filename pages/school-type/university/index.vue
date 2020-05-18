@@ -189,8 +189,8 @@
             
             <div class="text-component">
 
-              <div class='mschool' v-for='(list,idx) in filteredList' v-bind:key="idx">
-                  
+              <div  v-for='(list,idx) in filteredList' v-bind:key="idx">
+                  <div class='mschool' v-if='showing > idx'>
                     <div class="grid grid-gap-md">
                         <div class="text-left col-7@md padding-y-md padding-x-lg">
                           <a class='nodecor' :href="'/university-school/' + list.university.slug">
@@ -231,7 +231,7 @@
                           </div>
                         </div>
                     </div>
-                 
+                  </div>
                 </div>
                 <!-- end mschool -->
                
@@ -279,7 +279,10 @@
                     </ol>
                   </nav>
                   -->
-
+                   <div v-if='arraylength > showing' class="width-100 text-center padding-bottom-lg" @click='showmore'>
+                   <a class="btn btn--accent">顯示更多</a>
+                   <br>
+                   </div>
                    <p class='noresult padding-top-sm padding-left-sm text-md' v-if="filteredList==''">不好意思，沒有找到相關結果</p>
 
 
@@ -298,6 +301,7 @@
 </template>
 
 <script>
+import Cookies from 'js-cookie'
 export default {
   data(){
     return{
@@ -306,7 +310,9 @@ export default {
        selectedsubject: this.$route.query.subject,
        typequery : '',
        filter1: [],
-       sort: 'rankhigh'
+       sort: 'rankhigh',
+       showing: 10,
+       arraylength: 0
 
     }
   },
@@ -315,6 +321,9 @@ export default {
     return { subjects }
   },
   methods:{
+    showmore(){
+      this.showing = this.showing + 10
+    },
     selectsubject(parax){
       this.selectedsubject = parax
     },
@@ -334,7 +343,7 @@ export default {
               let z = true
               if (temp2 != '') {
                 z = x.university.option.find(element => {
-                  return temp2.includes(element.name)  
+                  return temp2 == element.name 
                 })
               }
               /* new checkbox filter check */
@@ -360,6 +369,7 @@ export default {
         let funiversities = universities[0].universityranking
         let temp = this.typequery
         let temp2 = this.filter1
+        
         funiversities = funiversities.filter(
           
           x => {
@@ -377,6 +387,7 @@ export default {
           }
         ) 
 
+        this.arraylength = funiversities.length
         /* sorting */
         if (this.sort=='ranklow'){
           funiversities.sort( ( a, b ) => {
@@ -402,7 +413,25 @@ export default {
         return funiversities
       }
     },
+  },
+  /*
+  updated: function(){
+     
+      Cookies.set('universityTypequery', this.typequery) 
+      Cookies.set('universityFilter1', this.filter1)
+
+  },
+  beforeMount: function(){
+
+      if (Cookies.get('universityTypequery'))
+      this.typequery = Cookies.get('universityTypequery')
+      if (Cookies.get('universityFilter1')){
+      let tempFilter = JSON.parse(Cookies.get('universityFilter1'))
+      this.filter1 = tempFilter
+      }
+
   }
+  */
 }
 
 </script>

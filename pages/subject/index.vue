@@ -50,7 +50,7 @@ export default {
     }
   },
   async asyncData({ $axios }) {
-    const articles = await $axios.$get(process.env.backendurl+'subjects')
+    const articles = await $axios.$get(process.env.backendurl+'subjects?issubject_eq=true')
     return { articles }
   },
 }
