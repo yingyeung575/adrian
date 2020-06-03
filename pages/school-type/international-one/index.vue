@@ -104,56 +104,177 @@
     
                       </ul>
                     </fieldset> -->
-                    <h5 class="font-bold padding-bottom-xxs margin-top-md">篩選條件</h5>
+                    <h5 class="font-bold padding-bottom-xxs margin-top-md">International Year 1 類別</h5>
                     <fieldset>
       
                       <div class="checkbox-list flex flex-column flex-gap-xxxs">
                         <div>
-                          <input class="checkbox" type="checkbox" value='RusselGroup' id="checkbox1" v-model="filter1">
-                          <label for="checkbox1">Russel Group ({{ checkcount('RusselGroup') }})</label>
+                          <input class="checkbox" type="checkbox" value='oneto1' id="checkbox1" v-model="filter1">
+                          <label for="checkbox1">大學 Foundation (1 to 1) ({{ checkcount('oneto1') }})</label>
                         </div>
                 
                         <div>
-                          <input class="checkbox" type="checkbox" value='DSEchinese' id="checkbox2" v-model="filter1">
-                          <label for="checkbox2">收DSE中文 ({{ checkcount('DSEchinese') }})</label>
+                          <input class="checkbox" type="checkbox" value='onetomany' id="checkbox2" v-model="filter1">
+                          <label for="checkbox2">學院 Foundation (1 to many) ({{ checkcount('onetomany') }})</label>
                         </div>
                 
                         <div>
-                          <input class="checkbox" type="checkbox" value='Alevelchinese' id="checkbox3" v-model="filter1">
-                          <label for="checkbox3">收Alevel中文 ({{ checkcount('Alevelchinese') }})</label>
-                        </div>
-
-                        <div>
-                          <input class="checkbox" type="checkbox" value='DSEEnglish' id="checkbox4" v-model="filter1">
-                          <label for="checkbox4">可用DSE English ({{ checkcount('DSEEnglish') }})</label>
-                        </div>
-
-                        <div>
-                          <input class="checkbox" type="checkbox" value='AdvancedEntryYear2' id="checkbox5" v-model="filter1">
-                          <label for="checkbox5">Advanced Entry (Year 2) ({{ checkcount('AdvancedEntryYear2') }})</label>
-                        </div>
-
-                        <div>
-                          <input class="checkbox" type="checkbox" value='AdvancedEntryYear3' id="checkbox6" v-model="filter1">
-                          <label for="checkbox6">Advanced Entry (Year 3) ({{ checkcount('AdvancedEntryYear3') }})</label>
-                        </div>
-                        <div>
-                          <input class="checkbox" type="checkbox" value='DirectEntry' id="checkbox7" v-model="filter1">
-                          <label for="checkbox7">Direct Entry ({{ checkcount('DirectEntry') }})</label>
-                        </div>
-                        <div>
-                          <input class="checkbox" type="checkbox" value='Clearing' id="checkbox8" v-model="filter1">
-                          <label for="checkbox8">Clearing ({{ checkcount('Clearing') }})</label>
-                        </div>
-                        <div>
-                          <input class="checkbox" type="checkbox" value='Fund' id="checkbox9" v-model="filter1">
-                          <label for="checkbox9">香港學生獎學金 ({{ checkcount('Fund') }})</label>
+                          <input class="checkbox" type="checkbox" value='nqf6' id="checkbox3" v-model="filter1">
+                          <label for="checkbox3">Package Visa (NQF 6) ({{ checkcount('nqf6') }})</label>
                         </div>
 
                       </div>
                     </fieldset>
 
-                    
+                    <h5 class="font-bold padding-bottom-xxs margin-top-md">收生要求 (雅思 IELTS for UKVI)</h5>
+                    <fieldset>
+      
+                      <div class="checkbox-list flex flex-column flex-gap-xxxs">
+                        <div>
+                          <input class="checkbox" type="checkbox" value='ielts4' id="checkbox4" v-model="filter1">
+                          <label for="checkbox4">4 ({{ checkcount('ielts4') }})</label>
+                        </div>
+                
+                        <div>
+                          <input class="checkbox" type="checkbox" value='ielts45' id="checkbox5" v-model="filter1">
+                          <label for="checkbox5">4.5 ({{ checkcount('ielts45') }})</label>
+                        </div>
+                
+                        <div>
+                          <input class="checkbox" type="checkbox" value='ielts5' id="checkbox6" v-model="filter1">
+                          <label for="checkbox6">5 ({{ checkcount('ielts5') }})</label>
+                        </div>
+                        <div>
+                          <input class="checkbox" type="checkbox" value='ielts55' id="checkbox7" v-model="filter1">
+                          <label for="checkbox7">5.5 ({{ checkcount('ielts55') }})</label>
+                        </div>
+                        <div>
+                          <input class="checkbox" type="checkbox" value='ielts6' id="checkbox8" v-model="filter1">
+                          <label for="checkbox8">6 ({{ checkcount('ielts6') }})</label>
+                        </div>
+                        <div>
+                          <input class="checkbox" type="checkbox" value='highdip' id="checkbox9" v-model="filter1">
+                          <label for="checkbox9">收High Dip/Asso ({{ checkcount('highdip') }})</label>
+                        </div>
+                        <div>
+                          <input class="checkbox" type="checkbox" value='dse433' id="checkbox10" v-model="filter1">
+                          <label for="checkbox10">收DSE 4-3-3 ({{ checkcount('dse433') }})</label>
+                        </div>
+                        <div>
+                          <input class="checkbox" type="checkbox" value='dse333' id="checkbox11" v-model="filter1">
+                          <label for="checkbox11">收DSE 3-3-3 ({{ checkcount('dse333') }})</label>
+                        </div>
+
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='dse332' id="checkbox30" v-model="filter1">
+                          <label for="checkbox30">收DSE 3-3-2 ({{ checkcount('dse332') }})</label>
+                        </div>
+
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='dse322' id="checkbox31" v-model="filter1">
+                          <label for="checkbox31">收DSE 3-2-2 ({{ checkcount('dse322') }})</label>
+                        </div>
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='dse221' id="checkbox32" v-model="filter1">
+                          <label for="checkbox32">收DSE 2-2-2 ({{ checkcount('dse222') }})</label>
+                        </div>
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='dse221' id="checkbox33" v-model="filter1">
+                          <label for="checkbox33">收DSE 2-2-1 ({{ checkcount('dse221') }})</label>
+                        </div>
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='alevelccc' id="checkbox34" v-model="filter1">
+                          <label for="checkbox34">收A-level C-C-C ({{ checkcount('alevelccc') }})</label>
+                        </div>
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='alevelccd' id="checkbox35" v-model="filter1">
+                          <label for="checkbox35">收A-level C-C-D ({{ checkcount('alevelccd') }})</label>
+                        </div>
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='alevelcdd' id="checkbox36" v-model="filter1">
+                          <label for="checkbox36">收A-level C-D-D ({{ checkcount('alevelcdd') }})</label>
+                        </div>
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='alevelddd' id="checkbox37" v-model="filter1">
+                          <label for="checkbox37">收A-level D-D-D ({{ checkcount('alevelddd') }})</label>
+                        </div>
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='aleveldde' id="checkbox38" v-model="filter1">
+                          <label for="checkbox38">收A-level D-D-E ({{ checkcount('aleveldde') }})</label>
+                        </div>
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='aleveldee' id="checkbox39" v-model="filter1">
+                          <label for="checkbox39">收A-level D-E-E ({{ checkcount('aleveldee') }})</label>
+                        </div>
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='ib30' id="checkbox40" v-model="filter1">
+                          <label for="checkbox40">收IB30 ({{ checkcount('ib30') }})</label>
+                        </div>
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='ib29' id="checkbox41" v-model="filter1">
+                          <label for="checkbox41">收IB29 ({{ checkcount('ib29') }})</label>
+                        </div>
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='ib28' id="checkbox42" v-model="filter1">
+                          <label for="checkbox42">收IB28 ({{ checkcount('ib28') }})</label>
+                        </div>
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='ib27' id="checkbox43" v-model="filter1">
+                          <label for="checkbox43">收IB27 ({{ checkcount('ib27') }})</label>
+                        </div>
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='ib26' id="checkbox44" v-model="filter1">
+                          <label for="checkbox44">收IB26 ({{ checkcount('ib26') }})</label>
+                        </div>
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='ib25' id="checkbox45" v-model="filter1">
+                          <label for="checkbox45">收IB25 ({{ checkcount('ib25') }})</label>
+                        </div>
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='ib24' id="checkbox46" v-model="filter1">
+                          <label for="checkbox46">收IB24 ({{ checkcount('ib24') }})</label>
+                        </div>
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='ib23' id="checkbox47" v-model="filter1">
+                          <label for="checkbox47">收IB23 ({{ checkcount('ib23') }})</label>
+                        </div>
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='ib22' id="checkbox48" v-model="filter1">
+                          <label for="checkbox48">收IB22 ({{ checkcount('ib22') }})</label>
+                        </div>
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='ib21' id="checkbox49" v-model="filter1">
+                          <label for="checkbox49">收IB21 ({{ checkcount('ib21') }})</label>
+                        </div>
+                                                <div>
+                          <input class="checkbox" type="checkbox" value='ib20' id="checkbox50" v-model="filter1">
+                          <label for="checkbox50">收IB20 ({{ checkcount('ib20') }})</label>
+                        </div>
+
+                      </div>
+                    </fieldset>
+
+                    <h5 class="font-bold padding-bottom-xxs margin-top-md">其他</h5>
+                    <fieldset>
+      
+                      <div class="checkbox-list flex flex-column flex-gap-xxxs">
+                        <div>
+                          <input class="checkbox" type="checkbox" value='scholarship' id="checkbox51" v-model="filter1">
+                          <label for="checkbox51">有機會申請獎學金 ({{ checkcount('scholarship') }})</label>
+                        </div>
+                
+                        <div>
+                          <input class="checkbox" type="checkbox" value='nearlondon' id="checkbox52" v-model="filter1">
+                          <label for="checkbox52">近倫敦 ({{ checkcount('nearlondon') }})</label>
+                        </div>
+                
+                       
+
+                      </div>
+                    </fieldset>
+                    <br><br>
+
+                                    
                 </div>
                 <!-- end sidebar content -->
               <!-- end -->
@@ -167,8 +288,10 @@
  
                       <option value="rankhigh">科目排名（高至低）</option>
                       <option value="ranklow">科目排名（低至高）</option>
-                      <option value="feehigh">學費（高至低）</option>
-                      <option value="feelow">學費（低至高）</option>
+                      <option value="percenthigh">銜接成功率（高至低）</option>
+                      <option value="percentlow">銜接成功率（低至高）</option>
+                      <option value="markhigh">銜接分數（高至低）</option>
+                      <option value="marklow">銜接分數（低至高）</option>
   
                    
                   </select>
@@ -178,10 +301,10 @@
             <!-- start main content -->
             <nav class="s-tabs padding-top-sm padding-left-sm">
               <ul class="s-tabs__list">
-                <li><nuxt-link  to="/school-type/foundation/step2">大學基礎班</nuxt-link></li>
+                <li><nuxt-link to="/school-type/foundation/step2">大學基礎班</nuxt-link></li>
                 <li><nuxt-link to="/school-type/boarding-school">寄宿學校</nuxt-link></li>
-                <li><nuxt-link class="s-tabs__item--selected" to="/school-type/university/step2">大學</nuxt-link></li>
-                <li><nuxt-link to="/school-type/international-one/step2">國際一年級</nuxt-link></li>
+                <li><nuxt-link to="/school-type/university/step2">大學</nuxt-link></li>
+                <li><nuxt-link class="s-tabs__item--selected" to="/school-type/international-one/step2">國際一年級</nuxt-link></li>
                 <li><nuxt-link to="/school-type/summer-school">夏季學校</nuxt-link></li>
               </ul>
               
@@ -193,15 +316,14 @@
                   <div class='mschool' v-if='showing > idx'>
                     <div class="grid grid-gap-md">
                         <div class="text-left col-7@md padding-y-md padding-x-lg">
-                          <nuxt-link class='nodecor' :to="'/university-school/' + list.university.slug">
-                          <img :src='backendurl  + list.university.image.url' width='100' v-if='list.university.image'>
-                          <h4 class="color-primary"><span class="padding-left-xxxs">{{list.university.name}}</span></h4>
-                          <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 2c3.196 0 6 2.618 6 5.602 0 3.093-2.493 7.132-6 12.661-3.507-5.529-6-9.568-6-12.661 0-2.984 2.804-5.602 6-5.602m0-2c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>{{list.university.address}}</p>
-                          <p>{{list.university.excerpt}}</p>
+                          <nuxt-link class='nodecor' :to="'/international-one/' + list.internationalone.slug">
+                          <img :src='backendurl  + list.internationalone.image.url' width='100' v-if='list.internationalone.image'>
+                          <h4 class="color-primary"><span class="padding-left-xxxs">{{list.internationalone.name}}</span></h4>
+                          <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 2c3.196 0 6 2.618 6 5.602 0 3.093-2.493 7.132-6 12.661-3.507-5.529-6-9.568-6-12.661 0-2.984 2.804-5.602 6-5.602m0-2c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>{{list.internationalone.address}}</p>
+                          <p>{{list.internationalone.excerpt}}</p>
                           </nuxt-link>
-                          <nuxt-link :to="'/university-school/' + list.university.slug" class="btn  btn--subtle btn--sm">查看大學</nuxt-link>
-                          <nuxt-link v-if='list.university.isfoundation' :to="'/university-school/' + list.university.slug" class="margin-left-sm btn btn--primary btn--sm">查看Foundation</nuxt-link>
-                          <nuxt-link v-if='list.university.isinternational1' :to="'/university-school/' + list.university.slug" class="margin-left-sm btn btn--accent btn--sm">查看International Year 1</nuxt-link>
+                          <nuxt-link :to="'/international-one/' + list.internationalone.slug" class="btn  btn--subtle btn--sm">查看更多</nuxt-link>
+                         
                         </div>
                         <div class="col-5@md">
                           <div class="jschollright padding-top-xs">
@@ -209,22 +331,23 @@
                               <h4 class="text-sm">科目排名</h4>
                               <h3 class='text-xl jthebg color-accent'>#{{list.rank}}</h3>
                             </div>
+
                             <div class="showstat">
-                              <h4 class="text-sm">設有Foundation</h4>
-                              <h3 class='text-xl jthebg color-accent text-center'> 
-                                <svg v-if='list.university.isfoundation' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.959 17l-4.5-4.319 1.395-1.435 3.08 2.937 7.021-7.183 1.422 1.409-8.418 8.591z"/></svg>
-                                <svg v-if='!list.university.isfoundation' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.538l-4.592-4.548 4.546-4.587-1.416-1.403-4.545 4.589-4.588-4.543-1.405 1.405 4.593 4.552-4.547 4.592 1.405 1.405 4.555-4.596 4.591 4.55 1.403-1.416z"/></svg>
-                              </h3>
+                              <h4 class="text-sm">銜接成功率</h4>
+                              <h3 v-if='list.internationalone.successrate' class='text-xl jthebg color-accent'>{{ list.internationalone.successrate }}%</h3>    
+                              <h3 v-if='!list.internationalone.successrate' class='text-xl jthebg color-accent text-center'>- </h3>                            
                             </div>
+
                             <div class="showstat">
-                              <h4 class="text-sm">設有 International Year 1</h4>
-                              <h3 class='text-xl jthebg color-accent text-center'>
-                                <svg v-if='list.university.isinternational1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.959 17l-4.5-4.319 1.395-1.435 3.08 2.937 7.021-7.183 1.422 1.409-8.418 8.591z"/></svg>
-                                <svg v-if='!list.university.isinternational1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.538l-4.592-4.548 4.546-4.587-1.416-1.403-4.545 4.589-4.588-4.543-1.405 1.405 4.593 4.552-4.547 4.592 1.405 1.405 4.555-4.596 4.591 4.55 1.403-1.416z"/></svg>
-                              </h3>
+                              <h4 class="text-sm">銜接分數</h4>
+                              <h3 v-if='list.internationalone.marks' class='text-xl jthebg color-accent'>{{ list.internationalone.marks }}</h3>    
+                              <h3 v-if='!list.internationalone.marks' class='text-xl jthebg color-accent text-center'>- </h3>                            
                             </div>
                             <div class="bg-contrast-lower padding-sm" style="padding-left:1.5em">
-                              <span><strong>學費預算：</strong>{{list.university.schoolfee}}
+                              <span><strong>學費預算：</strong>{{list.internationalone.schoolfee}}
+
+                              </span><br>
+                              <span><strong>最低收生：</strong>{{list.internationalone.minimumrequirement}}
 
                               </span>
                             </div>
@@ -324,20 +447,20 @@ export default {
   },
   async created(){
 
-     if (this.$store.state.schools.university)
-       this.subjects = this.$store.state.schools.university
+     if (this.$store.state.schools.internationalone)
+       this.subjects = this.$store.state.schools.internationalone
      else{
-       this.subjects = await this.$axios.$get(process.env.backendurl+'subjects?isuniversity_eq=true') 
-       this.setUniversity(this.subjects)
+       this.subjects = await this.$axios.$get(process.env.backendurl+'subjects?isinternation1_eq=true') 
+       this.setInternationalone(this.subjects)
      }
      
      this.loading = false
   },
   methods:{
     ...mapMutations({
-      setUniversity: 'schools/setUniversity',
-      updateuniversitytypequery: 'schools/updateuniversitytypequery',
-      updateuniversityfilter1: 'schools/updateuniversityfilter1',
+      setInternationalone: 'schools/setInternationalone',
+      updateinternationalonetypequery: 'schools/updateinternationalonetypequery',
+      updateinternationalonefilter1: 'schools/updateinternationalonefilter1',
     }),
     showmore(){
       this.showing = this.showing + 10
@@ -351,7 +474,7 @@ export default {
           let universities = this.subjects.filter(
             x => (x.slug == this.selectedsubject)
           ) 
-          let funiversities = universities[0].universityranking
+          let funiversities = universities[0].internationaloneranking
 
           funiversities = funiversities.filter(
             
@@ -360,7 +483,7 @@ export default {
               /* new checkbox filter check */
               let z = true
               if (temp2 != '') {
-                z = x.university.option.find(element => {
+                z = x.internationalone.optioninternationalone.find(element => {
                   return temp2 == element.name 
                 })
               }
@@ -376,23 +499,23 @@ export default {
 
     typequery: {
       get () {
-        return this.$store.state.schools.universitytypequery
+        return this.$store.state.schools.internationalonetypequery
       },
       set (value) {
-        this.updateuniversitytypequery(value)
+        this.updateinternationalonetypequery(value)
       }
     },
     filter1: {
       get () {
-        return this.$store.state.schools.universityfilter1
+        return this.$store.state.schools.internationalonefilter1
       },
       set (value) {
-        this.updateuniversityfilter1(value)
+        this.updateinternationalonefilter1(value)
       }
     },
     showsubjects(){
       if (this.subjects){
-        let unisubjects = this.subjects.filter( x => x.isuniversity == true)
+        let unisubjects = this.subjects.filter( x => x.isinternation1 == true)
         return unisubjects
       }
     },
@@ -402,19 +525,19 @@ export default {
         let universities = this.subjects.filter(
           x => (x.slug == this.selectedsubject)
         ) 
-        let funiversities = universities[0].universityranking
+        let funiversities = universities[0].internationaloneranking
         let temp = this.typequery
         let temp2 = this.filter1
         
         funiversities = funiversities.filter(
           
           x => {
-            let a = x.university.name.toLowerCase()
+            let a = x.internationalone.name.toLowerCase()
             let y = temp.toLowerCase()
             /* new checkbox filter check */
             let z = true
             if (temp2 != '') {
-              z = x.university.option.find(element => {
+              z = x.internationalone.optioninternationalone.find(element => {
                 return temp2.includes(element.name)  
               })
             }
@@ -439,14 +562,27 @@ export default {
           funiversities.reverse()
         }
 
-        if (this.sort=='feelow'){
+        if (this.sort=='percentlow'){
           funiversities.sort( ( a, b ) => {
-              return a.university.schoolfeesort - b.university.schoolfeesort;
+              return a.internationalone.successrate - b.internationalone.successrate;
           });
         }
-        if (this.sort=='feehigh'){
+        if (this.sort=='percenthigh'){
           funiversities.sort( ( a, b ) => {
-              return a.university.schoolfeesort - b.university.schoolfeesort;
+              return a.internationalone.successrate - b.internationalone.successrate;
+          });
+          funiversities.reverse()
+        }
+
+
+        if (this.sort=='marklow'){
+          funiversities.sort( ( a, b ) => {
+              return a.internationalone.marks - b.internationalone.marks;
+          });
+        }
+        if (this.sort=='markhigh'){
+          funiversities.sort( ( a, b ) => {
+              return a.internationalone.marks - b.internationalone.marks;
           });
           funiversities.reverse()
         }

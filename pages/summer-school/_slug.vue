@@ -4,7 +4,7 @@
             <div class="container max-width-adaptive-md">
                     <div class="grid grid-gap-md">
                       <div class="col-8@md">
-                          <nuxt-link class="hjhj text-sm" to='/school-type/boarding-school'>< 返回</nuxt-link>
+                          <nuxt-link class="hjhj text-sm" to='/school-type/summer-school'>< 返回</nuxt-link>
                             <div>
    
                               <img v-if='article.image' class='floatl margin-right-md margin-bottom-md' :src="backendurl + article.image.url" height="80">
@@ -494,7 +494,7 @@ data(){
     }
   },
   async asyncData({ $axios, params }) {
-    const articles = await $axios.$get(process.env.backendurl+'boarding-schools?slug='+params.slug)
+    const articles = await $axios.$get(process.env.backendurl+'summer-schools?slug='+params.slug)
     let article = articles[0];
     return { article }
   },

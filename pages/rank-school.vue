@@ -270,7 +270,7 @@
                     <tbody class="int-table__body js-int-table__body">
                       <tr class="int-table__row" v-for='( board, idx ) in articles' v-bind:key="idx">
                         
-                        <td class="int-table__cell">{{ board.rank }}</td>
+                        <td class="int-table__cell">{{ parseInt(board.rank) }}</td>
                         <td class="int-table__cell"><a v-if='board.link' :href="frontendurl + board.link">{{ board.name }}</a><span v-if='!board.link'>{{ board.name }}</span></td>
                         <td class="int-table__cell">{{ board.fee }}</td>
                         <td class="int-table__cell">{{ board.alevel }}</td>

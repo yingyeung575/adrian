@@ -37,197 +37,173 @@
     
                       </ul>
                     </fieldset> -->
-                    <h5 class="font-bold padding-bottom-xxs margin-top-md">中學類別</h5>
+                    <h5 class="font-bold padding-bottom-xxs margin-top-md">課程長度 (星期)</h5>
                     <fieldset>
       
                       <div class="checkbox-list flex flex-column flex-gap-xxxs">
                         <div>
-                          <input class="checkbox" type="checkbox" value='top150' id="checkbox1" v-model="filter1">
-                          <label for="checkbox1">Top 150 ({{ checkcount('top150') }})</label>
+                          <input class="checkbox" type="checkbox" value='length1' id="checkbox1" v-model="filter1">
+                          <label for="checkbox1">1 ({{ checkcount('length1') }})</label>
                         </div>
                 
                         <div>
-                          <input class="checkbox" type="checkbox" value='sixfromcollege' id="checkbox2" v-model="filter1">
-                          <label for="checkbox2">6th Form College ({{ checkcount('sixfromcollege') }})</label>
+                          <input class="checkbox" type="checkbox" value='length2' id="checkbox2" v-model="filter1">
+                          <label for="checkbox2">2 ({{ checkcount('length2') }})</label>
                         </div>
 
                         <div>
-                          <input class="checkbox" type="checkbox" value='focusinternational' id="checkbox3" v-model="filter1">
-                          <label for="checkbox3">著重照顧國際學生 ({{ checkcount('focusinternational') }})</label>
+                          <input class="checkbox" type="checkbox" value='length3' id="checkbox3" v-model="filter1">
+                          <label for="checkbox3">3 ({{ checkcount('length3') }})</label>
                         </div>
                         <div>
-                          <input class="checkbox" type="checkbox" value='smartstudents' id="checkbox4" v-model="filter1">
-                          <label for="checkbox4">精英拔尖型 ({{ checkcount('smartstudents') }})</label>
+                          <input class="checkbox" type="checkbox" value='length4' id="checkbox4" v-model="filter1">
+                          <label for="checkbox4">4 ({{ checkcount('length4') }})</label>
                         </div>
                         <div>
-                          <input class="checkbox" type="checkbox" value='goodfacilities' id="checkbox5" v-model="filter1">
-                          <label for="checkbox5">良好設施 ({{ checkcount('goodfacilities') }})</label>
+                          <input class="checkbox" type="checkbox" value='length5' id="checkbox5" v-model="filter1">
+                          <label for="checkbox5">5 ({{ checkcount('length5') }})</label>
                         </div>
-                        <div>
-                          <input class="checkbox" type="checkbox" value='specialneeds' id="checkbox6" v-model="filter1">
-                          <label for="checkbox6">特殊學習需要 ({{ checkcount('specialneeds') }})</label>
-                        </div>
-                        <div>
-                          <input class="checkbox" type="checkbox" value='athleticfocus' id="checkbox7" v-model="filter1">
-                          <label for="checkbox7">體育重視 ({{ checkcount('athleticfocus') }})</label>
-                        </div>                
-                        <div>
-                          <input class="checkbox" type="checkbox" value='musicfocus' id="checkbox8" v-model="filter1">
-                          <label for="checkbox8">音樂重視 ({{ checkcount('musicfocus') }})</label>
-                        </div>
-                        <div>
-                          <input class="checkbox" type="checkbox" value='artfocus' id="checkbox9" v-model="filter1">
-                          <label for="checkbox9">藝術重視 ({{ checkcount('artfocus') }})</label>
-                        </div>
-                        <div>
-                          <input class="checkbox" type="checkbox" value='sciencefocus' id="checkbox10" v-model="filter1">
-                          <label for="checkbox10">科學重視 ({{ checkcount('sciencefocus') }})</label>
-                        </div>
-                        <div>
-                          <input class="checkbox" type="checkbox" value='specialsubjectfocus' id="checkbox11" v-model="filter1">
-                          <label for="checkbox11">專科職業導向配套 ({{ checkcount('specialsubjectfocus') }})</label>
-                        </div>                     
-                        <div>
-                          <input class="checkbox" type="checkbox" value='carelearning' id="checkbox12" v-model="filter1">
-                          <label for="checkbox12">關懷學習 ({{ checkcount('carelearning') }})</label>
-                        </div> 
-                        <div>
-                          <input class="checkbox" type="checkbox" value='medioxford' id="checkbox13" v-model="filter1">
-                          <label for="checkbox13">醫科牛劍申請指導 ({{ checkcount('medioxford') }})</label>
-                        </div> 
+                      
                       </div>
                     </fieldset>
 
-                    <h5 class="font-bold padding-bottom-xxs margin-top-md">寄宿比例</h5>
+                    <h5 class="font-bold padding-bottom-xxs margin-top-md">年齡</h5>
                     <fieldset>
       
                       <div class="checkbox-list flex flex-column flex-gap-xxxs">
                         <div>
-                          <input class="checkbox" type="checkbox" value='boardpercent0to30' id="checkbox14" v-model="filter1">
-                          <label for="checkbox14">0-30% ({{ checkcount('boardpercent0to30') }})</label>
+                          <input class="checkbox" type="checkbox" value='age8' id="checkbox14" v-model="filter1">
+                          <label for="checkbox14">8至10 ({{ checkcount('age8') }})</label>
                         </div>
                 
                         <div>
-                          <input class="checkbox" type="checkbox" value='boardpercent31to60' id="checkbox15" v-model="filter1">
-                          <label for="checkbox15">31% - 60% ({{ checkcount('boardpercent31to60') }})</label>
+                          <input class="checkbox" type="checkbox" value='age11' id="checkbox15" v-model="filter1">
+                          <label for="checkbox15">11 ({{ checkcount('age11') }})</label>
                         </div>
 
                         <div>
-                          <input class="checkbox" type="checkbox" value='boardpercent60to100' id="checkbox16" v-model="filter1">
-                          <label for="checkbox16">60%-100% ({{ checkcount('boardpercent60to100') }})</label>
+                          <input class="checkbox" type="checkbox" value='age12' id="checkbox16" v-model="filter1">
+                          <label for="checkbox16">12 ({{ checkcount('age12') }})</label>
+                        </div>
+
+                        <div>
+                          <input class="checkbox" type="checkbox" value='age13' id="checkbox40" v-model="filter1">
+                          <label for="checkbox40">13 ({{ checkcount('age13') }})</label>
+                        </div>
+
+                        <div>
+                          <input class="checkbox" type="checkbox" value='age14' id="checkbox41" v-model="filter1">
+                          <label for="checkbox41">14 ({{ checkcount('age14') }})</label>
+                        </div>
+
+                        <div>
+                          <input class="checkbox" type="checkbox" value='age15' id="checkbox42" v-model="filter1">
+                          <label for="checkbox42">15 ({{ checkcount('age15') }})</label>
+                        </div>
+
+                        <div>
+                          <input class="checkbox" type="checkbox" value='age16' id="checkbox43" v-model="filter1">
+                          <label for="checkbox43">16 ({{ checkcount('age16') }})</label>
                         </div>
                         
                       </div>
                     </fieldset>
 
 
-                    <h5 class="font-bold padding-bottom-xxs margin-top-md">男/女校</h5>
+                    <h5 class="font-bold padding-bottom-xxs margin-top-md">學校特點</h5>
                     <fieldset>
       
                       <div class="checkbox-list flex flex-column flex-gap-xxxs">
                         <div>
-                          <input class="checkbox" type="checkbox" value='maleschool' id="checkbox17" v-model="filter1">
-                          <label for="checkbox17">男校 ({{ checkcount('maleschool') }})</label>
+                          <input class="checkbox" type="checkbox" value='boardingexp' id="checkbox17" v-model="filter1">
+                          <label for="checkbox17">寄宿學校體驗 ({{ checkcount('boardingexp') }})</label>
                         </div>
                 
                         <div>
-                          <input class="checkbox" type="checkbox" value='femaleschool' id="checkbox18" v-model="filter1">
-                          <label for="checkbox18">女校 ({{ checkcount('femaleschool') }})</label>
+                          <input class="checkbox" type="checkbox" value='prepuni' id="checkbox18" v-model="filter1">
+                          <label for="checkbox18">大學預備課程 ({{ checkcount('prepuni') }})</label>
                         </div>
 
                         <div>
-                          <input class="checkbox" type="checkbox" value='malefemaleschool' id="checkbox19" v-model="filter1">
-                          <label for="checkbox19">男女校 ({{ checkcount('malefemaleschool') }})</label>
+                          <input class="checkbox" type="checkbox" value='oxford' id="checkbox19" v-model="filter1">
+                          <label for="checkbox19">牛劍預備課程 ({{ checkcount('oxford') }})</label>
+                        </div>
+
+                        <div>
+                          <input class="checkbox" type="checkbox" value='football' id="checkbox44" v-model="filter1">
+                          <label for="checkbox44">足球訓練營 ({{ checkcount('football') }})</label>
+                        </div>
+
+                        <div>
+                          <input class="checkbox" type="checkbox" value='art' id="checkbox45" v-model="filter1">
+                          <label for="checkbox45">藝術課程 ({{ checkcount('art') }})</label>
+                        </div>
+
+                        <div>
+                          <input class="checkbox" type="checkbox" value='topschoolcourse' id="checkbox46" v-model="filter1">
+                          <label for="checkbox46">頂尖學府體驗 ({{ checkcount('topschoolcourse') }})</label>
+                        </div>
+
+                        <div>
+                          <input class="checkbox" type="checkbox" value='uniexp' id="checkbox47" v-model="filter1">
+                          <label for="checkbox47">大學體驗 ({{ checkcount('uniexp') }})</label>
                         </div>
                         
                       </div>
                     </fieldset>
 
 
-                    <h5 class="font-bold padding-bottom-xxs margin-top-md">入學要求</h5>
+                    <h5 class="font-bold padding-bottom-xxs margin-top-md">地點</h5>
                     <fieldset>
       
                       <div class="checkbox-list flex flex-column flex-gap-xxxs">
                         <div>
-                          <input class="checkbox" type="checkbox" value='alevel' id="checkbox20" v-model="filter1">
-                          <label for="checkbox20">Alevel ({{ checkcount('alevel') }})</label>
+                          <input class="checkbox" type="checkbox" value='city' id="checkbox20" v-model="filter1">
+                          <label for="checkbox20">市區 ({{ checkcount('city') }})</label>
                         </div>
                 
                         <div>
-                          <input class="checkbox" type="checkbox" value='ib' id="checkbox21" v-model="filter1">
-                          <label for="checkbox21">IB ({{ checkcount('ib') }})</label>
+                          <input class="checkbox" type="checkbox" value='farfromcity' id="checkbox21" v-model="filter1">
+                          <label for="checkbox21">偏離大城市 ({{ checkcount('farfromcity') }})</label>
                         </div>
 
                         <div>
-                          <input class="checkbox" type="checkbox" value='gcse' id="checkbox22" v-model="filter1">
-                          <label for="checkbox22">GCSE ({{ checkcount('gcse') }})</label>
+                          <input class="checkbox" type="checkbox" value='nearheathrow' id="checkbox22" v-model="filter1">
+                          <label for="checkbox22">鄰近Heathrow機場 ({{ checkcount('nearheathrow') }})</label>
                         </div>
                         <div>
-                          <input class="checkbox" type="checkbox" value='oneyrgcse' id="checkbox23" v-model="filter1">
-                          <label for="checkbox23">1 Year GCSE ({{ checkcount('oneyrgcse') }})</label>
-                        </div>
-
-                        <div>
-                          <input class="checkbox" type="checkbox" value='oneyralevel' id="checkbox24" v-model="filter1">
-                          <label for="checkbox24">1 Year A-level ({{ checkcount('oneyralevel') }})</label>
-                        </div>                        
-                      </div>
-                    </fieldset>
-
-
-                    <h5 class="font-bold padding-bottom-xxs margin-top-md">學生人數</h5>
-                    <fieldset>
-      
-                      <div class="checkbox-list flex flex-column flex-gap-xxxs">
-                        <div>
-                          <input class="checkbox" type="checkbox" value='zeroto300' id="checkbox25" v-model="filter1">
-                          <label for="checkbox25">0-300 ({{ checkcount('zeroto300') }})</label>
-                        </div>
-                
-                        <div>
-                          <input class="checkbox" type="checkbox" value='threehundredto600' id="checkbox26" v-model="filter1">
-                          <label for="checkbox26">300-600 ({{ checkcount('threehundredto600') }})</label>
+                          <input class="checkbox" type="checkbox" value='nearlondon' id="checkbox23" v-model="filter1">
+                          <label for="checkbox23">鄰近London ({{ checkcount('nearlondon') }})</label>
                         </div>
 
                         <div>
-                          <input class="checkbox" type="checkbox" value='sixhundredto1000' id="checkbox27" v-model="filter1">
-                          <label for="checkbox27">600-1000 ({{ checkcount('sixhundredto1000') }})</label>
-                        </div>
+                          <input class="checkbox" type="checkbox" value='nearmanchester' id="checkbox24" v-model="filter1">
+                          <label for="checkbox24">鄰近Manchester ({{ checkcount('nearmanchester') }})</label>
+                        </div> 
+
                         <div>
-                          <input class="checkbox" type="checkbox" value='thousandmore' id="checkbox28" v-model="filter1">
-                          <label for="checkbox28">1000+ ({{ checkcount('thousandmore') }})</label>
+                          <input class="checkbox" type="checkbox" value='nearbirmingham' id="checkbox50" v-model="filter1">
+                          <label for="checkbox50">鄰近Birmingham ({{ checkcount('nearbirmingham') }})</label>
+                        </div>
+
+                        <div>
+                          <input class="checkbox" type="checkbox" value='nearoxford' id="checkbox51" v-model="filter1">
+                          <label for="checkbox51">鄰近Oxford ({{ checkcount('nearoxford') }})</label>
+                        </div>
+
+                        <div>
+                          <input class="checkbox" type="checkbox" value='nearcambridge' id="checkbox52" v-model="filter1">
+                          <label for="checkbox52">鄰近Cambridge ({{ checkcount('nearcambridge') }})</label>
+                        </div>
+
+                        <div>
+                          <input class="checkbox" type="checkbox" value='nearbristol' id="checkbox53" v-model="filter1">
+                          <label for="checkbox53">鄰近Bristol ({{ checkcount('nearbristol') }})</label>
                         </div>                       
                       </div>
                     </fieldset>
 
 
-                    <h5 class="font-bold padding-bottom-xxs margin-top-md">學費預算（£）</h5>
-                    <fieldset>
-      
-                      <div class="checkbox-list flex flex-column flex-gap-xxxs">
-                        <div>
-                          <input class="checkbox" type="checkbox" value='zeroto35000' id="checkbox29" v-model="filter1">
-                          <label for="checkbox29">0-35000 ({{ checkcount('zeroto35000') }})</label>
-                        </div>
-                
-                        <div>
-                          <input class="checkbox" type="checkbox" value='thirtyfivethousandto40000' id="checkbox30" v-model="filter1">
-                          <label for="checkbox30">35000-40000 ({{ checkcount('thirtyfivethousandto40000') }})</label>
-                        </div>
-
-                        <div>
-                          <input class="checkbox" type="checkbox" value='fortythousandto45000' id="checkbox31" v-model="filter1">
-                          <label for="checkbox31">40000-45000 ({{ checkcount('fortythousandto45000') }})</label>
-                        </div>
-
-                        <div>
-                          <input class="checkbox" type="checkbox" value='fortyfivethousandmore' id="checkbox32" v-model="filter1">
-                          <label for="checkbox32">45000+ ({{ checkcount('fortyfivethousandmore') }})</label>
-                        </div>
-
-                                              
-                      </div>
-                    </fieldset>
                     <br><br>
                     
                 </div>
@@ -243,10 +219,7 @@
  
                       <option value="feelow">學費（低至高）</option>
                       <option value="feehigh">學費（高至低）</option>
-                      <option value="alevellow">A Level (A*-A)（低至高）</option>
-                      <option value="alevelhigh">A Level (A*-A)（高至低）</option>
-                      <option value="gcselow">GCSE (A*-A)（低至高）</option>
-                      <option value="gcsehigh">GCSE (A*-A)（高至低）</option>
+                      
                       
   
                    
@@ -258,10 +231,10 @@
             <nav class="s-tabs padding-top-sm padding-left-sm">
               <ul class="s-tabs__list">
                 <li><nuxt-link  to="/school-type/foundation/step2">大學基礎班</nuxt-link></li>
-                <li><nuxt-link class="s-tabs__item--selected" to="/school-type/boarding-school">寄宿學校</nuxt-link></li>
+                <li><nuxt-link to="/school-type/boarding-school">寄宿學校</nuxt-link></li>
                 <li><nuxt-link to="/school-type/university/step2">大學</nuxt-link></li>
                 <li><nuxt-link to="/school-type/international-one/step2">國際一年級</nuxt-link></li>
-                <li><nuxt-link to="/school-type/summer-school">夏季學校</nuxt-link></li>
+                <li><nuxt-link class="s-tabs__item--selected" to="/school-type/summer-school">夏季學校</nuxt-link></li>
               </ul>
               
             </nav>
@@ -272,38 +245,34 @@
                   <div class='mschool' v-if='showing > idx'>
                     <div class="grid grid-gap-md" >
                         <div class="text-left col-7@md padding-y-md padding-x-lg">
-                          <nuxt-link class='nodecor' :to="'/boarding-school/' + list.slug">
+                          <nuxt-link class='nodecor' :to="'/summer-school/' + list.slug">
                           <img :src='backendurl  + list.image.url' width='100' v-if='list.image'>
                           <h4 class="color-primary"><span class="padding-left-xxxs"></span>{{list.name}}</span></h4>
                           <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 2c3.196 0 6 2.618 6 5.602 0 3.093-2.493 7.132-6 12.661-3.507-5.529-6-9.568-6-12.661 0-2.984 2.804-5.602 6-5.602m0-2c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>{{list.address}}</p>
                           <p>{{list.excerpt}}</p>
                           </nuxt-link>
-                          <nuxt-link :to="'/boarding-school/' + list.slug" class="btn  btn--subtle btn--sm">了解更多</nuxt-link>
+                          <nuxt-link :to="'/summer-school/' + list.slug" class="btn  btn--subtle btn--sm">了解更多</nuxt-link>
                          
                         </div>
                         <div class="col-5@md">
                           <div class="jschollright padding-top-xs">
                             <div class="showstat" style="padding-left:1em">
-                              <h4 class="text-sm">A Level (A*-A)</h4>
-                              <h3 v-if='!list.alevel' class='text-xl jthebg color-accent text-center'>-</h3>
-                              <h3 v-if='list.alevel' class='text-xl jthebg color-accent'>{{ list.alevel }}%</h3>
+                              <h4 class="text-sm">距離倫敦</h4>
+                              <h3 v-if='!list.nearlondon' class='text-xl jthebg color-accent text-center'>-</h3>
+                              <h3 v-if='list.nearlondon' class='text-xl jthebg color-accent'>{{ list.nearlondon }}m</h3>
                             </div>
                             <div class="showstat">
-                              <h4   class="text-sm">GCSE (A*-A)</h4>
-                              <h3 v-if='list.gcse' class='text-xl jthebg color-accent'>{{ list.gcse }}%</h3>    
-                              <h3 v-if='!list.gcse' class='text-xl jthebg color-accent text-center'>- </h3>                            
+                              <h4   class="text-sm">距離曼徹斯特</h4>
+                              <h3 v-if='list.nearmanchester' class='text-xl jthebg color-accent'>{{ list.nearmanchester }}m</h3>    
+                              <h3 v-if='!list.nearmanchester' class='text-xl jthebg color-accent text-center'>- </h3>                            
                             </div>
-                            <div class="showstat">
-                              <h4 class="text-sm">寄宿比例</h4>
-                              <h3 v-if='list.boardingpercentage' class='text-xl jthebg color-accent'>{{ list.boardingpercentage }}%</h3>              
-                              <h3 v-if='!list.boardingpercentage' class='text-xl jthebg color-accent text-center'>-</h3>   
-                            </div>
+                          
                             <div class="bg-contrast-lower padding-sm" style="padding-left:1.5em">
                               <span><strong>學費預算：</strong>{{list.schoolfee}}
 
                               </span>
                               <br>
-                              <span><strong>學生人數：</strong>{{list.noofstudents}}
+                              <span><strong>年齡：</strong>{{list.age}}
 
                               </span>
                             </div>
@@ -407,8 +376,8 @@ export default {
      if (this.$store.state.schools.boarding)
        this.universities = this.$store.state.schools.boarding
      else{
-       this.universities = await this.$axios.$get(process.env.backendurl+'boarding-schools') 
-       this.setBoarding(this.universities)
+       this.universities = await this.$axios.$get(process.env.backendurl+'summer-schools') 
+       this.setSummer(this.universities)
      }
      this.loading = false
   },
@@ -417,9 +386,9 @@ export default {
   methods:{
 
     ...mapMutations({
-      setBoarding: 'schools/setBoarding',
-      updateboardingtypequery: 'schools/updateboardingtypequery',
-      updateboardingfilter1: 'schools/updateboardingfilter1',
+      setSummer: 'schools/setSummer',
+      updatesummertypequery: 'schools/updatesummertypequery',
+      updatesummerfilter1: 'schools/updatesummerfilter1',
     }),
     showmore(){
       this.showing = this.showing + 10
@@ -436,7 +405,7 @@ export default {
               /* new checkbox filter check */
               let z = true
               if (temp2 != '') {
-                z = x.optionboarding.find(element => {
+                z = x.optionsummer.find(element => {
                   return temp2 == element.name
                 })
               }
@@ -452,18 +421,18 @@ export default {
 
     typequery: {
       get () {
-        return this.$store.state.schools.boardingtypequery
+        return this.$store.state.schools.summertypequery
       },
       set (value) {
-        this.updateboardingtypequery(value)
+        this.updatesummertypequery(value)
       }
     },
     filter1: {
       get () {
-        return this.$store.state.schools.boardingfilter1
+        return this.$store.state.schools.summerfilter1
       },
       set (value) {
-        this.updateboardingfilter1(value)
+        this.updatesummerfilter1(value)
       }
     },
     // Search system
@@ -482,7 +451,7 @@ export default {
             /* new checkbox filter check */
             let z = true
             if (temp2 != '') {
-              z = x.optionboarding.find(element => {
+              z = x.optionsummer.find(element => {
                 return temp2.includes(element.name)  
               })
             }
@@ -505,28 +474,7 @@ export default {
           });
           funiversities.reverse()
         }
-        if (this.sort=='alevellow'){
-          funiversities.sort( ( a, b ) => {
-              return a.alevel - b.alevel;
-          });
-        }
-        if (this.sort=='alevelhigh'){
-          funiversities.sort( ( a, b ) => {
-              return a.alevel - b.alevel;
-          });
-          funiversities.reverse()
-        }
-        if (this.sort=='gcselow'){
-          funiversities.sort( ( a, b ) => {
-              return a.gcse - b.gcse;
-          });
-        }
-        if (this.sort=='gcsehigh'){
-          funiversities.sort( ( a, b ) => {
-              return a.gcse - b.gcse;
-          });
-          funiversities.reverse()
-        }
+       
         /* sorting */
 
  

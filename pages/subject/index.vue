@@ -50,7 +50,7 @@ export default {
     }
   },
   async asyncData({ $axios }) {
-    const articles = await $axios.$get(process.env.backendurl+'subjects?issubject_eq=true')
+    const articles = await $axios.$get(process.env.backendurl+'subjects/findmin?issubject_eq=true')
     return { articles }
   },
 }

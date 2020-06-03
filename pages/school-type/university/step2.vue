@@ -44,8 +44,8 @@
                   <ul class="margin-top-xl text-center full-screen-select__list js-full-screen-select__list" role="listbox">
                   
                     <li v-for='(subject, idx) in showsubjects' v-bind:key="idx">
-                      <a :href="frontendurl + 'school-type/university?subject=' + subject.slug" v-if='idx==0' class="full-screen-select__option full-screen-select__option--selected" role="option">{{ subject.name }}</a>
-                      <a :href="frontendurl + 'school-type/university?subject=' + subject.slug" v-if='idx!=0' class="full-screen-select__option" role="option">{{ subject.name }}</a>
+                      <nuxt-link :to="'/school-type/university?subject=' + subject.slug" v-if='idx==0' class="full-screen-select__option full-screen-select__option--selected" role="option">{{ subject.name }}</nuxt-link>
+                      <nuxt-link :to="'/school-type/university?subject=' + subject.slug" v-if='idx!=0' class="full-screen-select__option" role="option">{{ subject.name }}</nuxt-link>
                     </li>
                     
                     
@@ -313,7 +313,7 @@ export default {
     }
   },
   async asyncData({ $axios }) {
-    const subjects = await $axios.$get(process.env.backendurl+'subjects')
+    const subjects = await $axios.$get(process.env.backendurl+'subjects/findmin?isuniversity_eq=true')
     return { subjects }
   },
   methods:{

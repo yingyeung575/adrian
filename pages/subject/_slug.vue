@@ -101,8 +101,8 @@ export default {
     }
   },
   async asyncData({ $axios, params }) {
-    const subjectss = await $axios.$get(process.env.backendurl+'subjects')
-    const articles = await $axios.$get(process.env.backendurl+'subjects?slug='+params.slug)
+    const subjectss = await $axios.$get(process.env.backendurl+'subjects/findmin?issubject_eq=true')
+    const articles = await $axios.$get(process.env.backendurl+'subjects/findmin?slug='+params.slug)
     let article = articles[0];
     return { article,subjectss }
   },

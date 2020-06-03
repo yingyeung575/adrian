@@ -53,14 +53,14 @@
       
                 <ul class="f-header__dropdown">
                   <li><a class="f-header__dropdown-link" href="/about">關於Linkedu</a></li>
-                  <li><a href="/case-analysis" class="f-header__dropdown-link">案例研究</a></li>
+                  <li><a href="/case-analysis" class="f-header__dropdown-link">過往學生分享</a></li>
                   <li><a href="/events" class="f-header__dropdown-link">最新講座</a></li>
                   <li><a href="/news" class="f-header__dropdown-link">最新消息 + 截止報名日期</a></li>
         
                 </ul>
             </li>             
-              <li class="f-header__item"><a href="/school-type" class="f-header__link">院校資料庫</a></li>
-              <li class="f-header__item"><a href="/subject" class="f-header__link">科目一覧</a></li>
+              <li class="f-header__item"><a href="/school-type" class="f-header__link">院校點評</a></li>
+              <li class="f-header__item"><a href="/subject" class="f-header__link">免費科目指導</a></li>
               <li class="f-header__item">
                 <a href="/clearing/international-year-one" class="f-header__link">
                   <span>專區分類</span>

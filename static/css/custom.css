@@ -271,6 +271,11 @@ a.nodec{
     margin-top: 2em;
     margin-bottom: 2em;
 }
+.text-component img.loadingicon{
+    width: 2em;
+    margin-top: 1em;
+    display: block;
+}
 /*
 #newmainsearh .bgmilk{
     height: 100vh;

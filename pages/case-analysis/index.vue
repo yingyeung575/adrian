@@ -5,7 +5,7 @@
           <div class="hero__content text-center">
             
             <div class="text-component margin-bottom-sm">
-              <h1 class="color-white">案例研究</h1>
+              <h1 class="color-white">過往學生分享</h1>
               
             </div>
         

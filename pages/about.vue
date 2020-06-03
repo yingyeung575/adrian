@@ -15,7 +15,7 @@
         </div>
       </section>
 
-      <section class="feature-v5 padding-top-xl padding-bottom-lg bg-contrast-lower">
+      <section class="feature-v5 padding-top-xl padding-bottom-lg">
         <div class="feature-v5__content">
           <div class="container max-width-adaptive-sm">
             <div class="grid">
@@ -28,9 +28,6 @@
                 <p>而LinkedU亦針對香港學生建立了一個全新的一站式英國留學搜尋平台，提供各項切合學生及家長需求的留學資訊、留學服務及周邊各項安排，包括簽證、租房、保險、機票代訂等，通過整合本地及海外優質的資源，為每個家庭完成整個留學鏈條中必要的每一步</p>
               </div>
 
-              <div class="margin-top-md responsive-iframe">
-                <iframe src="https://player.vimeo.com/video/308876956?title=0&byline=0&portrait=0&badge=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-             </div>
 
              
 
@@ -41,7 +38,7 @@
 
       </section>
 
-      <section class=" padding-bottom-xxl bg-contrast-lower">
+      <section class=" padding-bottom-xxl ">
         <div>
           <div class="container max-width-lg">
            <!-- <div class="text-component text-center">
@@ -78,6 +75,56 @@
           </div>
         </div>
       </section>
+
+       <section class="team bg-contrast-lower padding-y-xl">
+      <div class="container max-width-adaptive-lg">
+        <div class="margin-bottom-lg">
+          <h3 class="text-center margin-bottom-lg">Linkedu團隊</h3>
+        </div>
+
+        <div class="grid grid-gap-sm">
+          <div class="card-v2 col-3@md">
+            <figure>
+              <img src="img/team-img-1.jpg" alt="photo of James Powell">
+              <figcaption class="card-v2__caption text-center">
+                <div class="card-v2__title">James Powell</div>
+                <div class="card-v2__label">Designer</div>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="card-v2 col-3@md">
+            <figure>
+              <img src="img/team-img-1.jpg" alt="photo of Emily Ewing">
+              <figcaption class="card-v2__caption text-center">
+                <div class="card-v2__title">Emily Ewing</div>
+                <div class="card-v2__label">Developer</div>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="card-v2 col-3@md">
+            <figure>
+              <img src="img/team-img-1.jpg" alt="photo of Mathew Burford">
+              <figcaption class="card-v2__caption text-center">
+                <div class="card-v2__title">Mathew Burford</div>
+                <div class="card-v2__label">SVP of marketing</div>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="card-v2 col-3@md">
+            <figure>
+              <img src="img/team-img-1.jpg" alt="photo of Olivia Gribben">
+              <figcaption class="card-v2__caption text-center">
+                <div class="card-v2__title">Olivia Gribben</div>
+                <div class="card-v2__label">CEO</div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
       <section class='padding-y-xl'>
@@ -161,7 +208,7 @@
 
       </section>
 
-        <why />
+      
 
         <section class="margin-bottom-xxxl">
 
@@ -233,7 +280,7 @@
           <div class="articles">
               <div class="container max-width-adaptive-lg">
                 <div class="text-center">
-                  <h3 class="margin-bottom-lg">案例研究</h3>
+                  <h3 class="margin-bottom-lg">過往學生分享</h3>
                 </div>
                 <div class="grid grid-gap-sm">
                   
@@ -414,55 +461,7 @@
               </div>
             </div>
       </section>
-      <section class="team bg-contrast-lower padding-y-xl">
-      <div class="container max-width-adaptive-lg">
-        <div class="margin-bottom-lg">
-          <h3 class="text-center margin-bottom-lg">Linkedu團隊</h3>
-        </div>
-
-        <div class="grid grid-gap-sm">
-          <div class="card-v2 col-3@md">
-            <figure>
-              <img src="img/team-img-1.jpg" alt="photo of James Powell">
-              <figcaption class="card-v2__caption text-center">
-                <div class="card-v2__title">James Powell</div>
-                <div class="card-v2__label">Designer</div>
-              </figcaption>
-            </figure>
-          </div>
-
-          <div class="card-v2 col-3@md">
-            <figure>
-              <img src="img/team-img-1.jpg" alt="photo of Emily Ewing">
-              <figcaption class="card-v2__caption text-center">
-                <div class="card-v2__title">Emily Ewing</div>
-                <div class="card-v2__label">Developer</div>
-              </figcaption>
-            </figure>
-          </div>
-
-          <div class="card-v2 col-3@md">
-            <figure>
-              <img src="img/team-img-1.jpg" alt="photo of Mathew Burford">
-              <figcaption class="card-v2__caption text-center">
-                <div class="card-v2__title">Mathew Burford</div>
-                <div class="card-v2__label">SVP of marketing</div>
-              </figcaption>
-            </figure>
-          </div>
-
-          <div class="card-v2 col-3@md">
-            <figure>
-              <img src="img/team-img-1.jpg" alt="photo of Olivia Gribben">
-              <figcaption class="card-v2__caption text-center">
-                <div class="card-v2__title">Olivia Gribben</div>
-                <div class="card-v2__label">CEO</div>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
+     
 
       <section class="padding-y-xl" data-theme="dark">
           <div class="container max-width-sm">

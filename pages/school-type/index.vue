@@ -43,11 +43,11 @@
                   <ul class="margin-top-xl text-center full-screen-select__list js-full-screen-select__list" role="listbox">
                   
 
-                    <li><a href="#0" class="full-screen-select__option full-screen-select__option--selected" role="option">大學基礎班</a></li>
-                    <li><a href="/school-type/boarding-school" class="full-screen-select__option" role="option">寄宿學校</a></li>
-                    <li><a href="/school-type/university/step2" class="full-screen-select__option" role="option">大學</a></li>
-                    <li><a href="#0" class="full-screen-select__option" role="option">國際一年級</a></li>
-                    <li><a href="#0" class="full-screen-select__option" role="option">夏季學校</a></li>
+                    <li><nuxt-link to='/school-type/foundation/step2' class="full-screen-select__option full-screen-select__option--selected" role="option">大學基礎班</nuxt-link></li>
+                    <li><nuxt-link to="/school-type/boarding-school" class="full-screen-select__option" role="option">寄宿學校</nuxt-link></li>
+                    <li><nuxt-link to="/school-type/university/step2" class="full-screen-select__option" role="option">大學</nuxt-link></li>
+                    <li><nuxt-link to='/school-type/international-one/step2' class="full-screen-select__option" role="option">國際一年級</nuxt-link></li>
+                    <li><nuxt-link to='/school-type/summer-school' class="full-screen-select__option" role="option">夏季學校</nuxt-link></li>
 
                   </ul> 
                 </div>
@@ -299,6 +299,7 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex' 
 export default {
   data(){
     return{
@@ -312,10 +313,27 @@ export default {
     }
   },
   async asyncData({ $axios }) {
-    const subjects = await $axios.$get(process.env.backendurl+'subjects')
+    const subjects = ''
     return { subjects }
   },
+  async created(){
+
+
+    /*
+     if (this.$store.state.schools.boarding)
+       this.universities = this.$store.state.schools.boarding
+     else{
+       this.universities = await this.$axios.$get(process.env.backendurl+'boarding-schools') 
+       this.setBoarding(this.universities)
+     }
+     alert('loaded')
+     */
+  },
   methods:{
+
+    ...mapMutations({
+      setBoarding: 'schools/setBoarding'
+    }),
     selectsubject(parax){
       this.selectedsubject = parax
     },

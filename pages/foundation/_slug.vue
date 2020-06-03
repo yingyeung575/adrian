@@ -4,7 +4,9 @@
             <div class="container max-width-adaptive-md">
                     <div class="grid grid-gap-md">
                       <div class="col-8@md">
-                          <nuxt-link class="hjhj text-sm" to='/school-type/boarding-school'>< 返回</nuxt-link>
+
+                            <a @click='goback' class="hjhj text-sm">< 返回</a>
+         
                             <div>
    
                               <img v-if='article.image' class='floatl margin-right-md margin-bottom-md' :src="backendurl + article.image.url" height="80">
@@ -51,145 +53,6 @@
                                               <img v-if='!content.link' :src="backendurl + content.image.url">
                                               <figcaption>{{ content.caption }}</figcaption>
                                             </figure>
-
-                                            <table v-if="content.__component === 'twocol-table.twocol-table'" class="tablemargin twocol table table--expanded@xs js-table width-100% table--expanded table--loaded" aria-label="Table Example">
-                                           
-                                               
-                                                <tbody class="table__body">
-                                               
-                                              
-                                                  <tr class="table__row" v-for='(row,idx) in content.tablerow' v-bind:key='idx'>
-                                                    <td class="table__cell" role="cell" v-if="row.firstcol" v-html="$md.render(row.firstcol)">
-                                                           
-                                                    </td>
-                                              
-                                                    <td class="table__cell" role="cell" v-if="row.secondcol" v-html="$md.render(row.secondcol)">
-                                                            
-                                                    </td>
-                                              
-    
-                                                  </tr>
-                                                                                                   
-                                                </tbody>
-                                              </table>
-
-                                              <table v-if="content.__component === 'academictable.academictable'" class="table table--expanded@xs js-table width-100% table--expanded table--loaded" aria-label="Table Example">
-                                                <tbody class="table__body">
-                                                    <tr class="table__row">
-                                                        <td class="table__cell" role="cell">
-                                                            提供課程：
-                                                        </td>
-
-                                                        <td class="table__cell" role="cell">
-                                                            英國會考<br />
-                                                            GCSE
-                                                        </td>
-
-                                                        <td class="table__cell" role="cell">
-                                                            國際會考<br />
-                                                            (IGCSE)
-                                                        </td>
-                                                        <td class="table__cell" role="cell">
-                                                            英國高考<br />
-                                                            A-Level
-                                                        </td>
-                                                        <td class="table__cell" role="cell">
-                                                            國際文憑(IB)
-                                                        </td>
-                                                        <td class="table__cell" role="cell">
-                                                            BTEC
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="table__row">
-                                                        <td class="table__cell" role="cell"></td>
-
-                                                        <td class="table__cell" role="cell">
-                                                            
-                                                            <svg v-if='content.gcse' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                                                <path
-                                                                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.959 17l-4.5-4.319 1.395-1.435 3.08 2.937 7.021-7.183 1.422 1.409-8.418 8.591z"
-                                                                ></path>
-                                                            </svg>
-                                                             <svg v-if='!content.gcse' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                                                <path
-                                                                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.538l-4.592-4.548 4.546-4.587-1.416-1.403-4.545 4.589-4.588-4.543-1.405 1.405 4.593 4.552-4.547 4.592 1.405 1.405 4.555-4.596 4.591 4.55 1.403-1.416z"
-                                                                ></path>
-                                                            </svg>
-                                                        </td>
-
-                                                        <td class="table__cell" role="cell">
-                                                            <svg v-if='content.igcse' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                                                <path
-                                                                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.959 17l-4.5-4.319 1.395-1.435 3.08 2.937 7.021-7.183 1.422 1.409-8.418 8.591z"
-                                                                ></path>
-                                                            </svg>
-                                                             <svg v-if='!content.igcse' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                                                <path
-                                                                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.538l-4.592-4.548 4.546-4.587-1.416-1.403-4.545 4.589-4.588-4.543-1.405 1.405 4.593 4.552-4.547 4.592 1.405 1.405 4.555-4.596 4.591 4.55 1.403-1.416z"
-                                                                ></path>
-                                                            </svg>
-                                                        </td>
-                                                        <td class="table__cell" role="cell">
-                                                            <svg v-if='content.alevel' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                                                <path
-                                                                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.959 17l-4.5-4.319 1.395-1.435 3.08 2.937 7.021-7.183 1.422 1.409-8.418 8.591z"
-                                                                ></path>
-                                                            </svg>
-                                                             <svg v-if='!content.alevel' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                                                <path
-                                                                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.538l-4.592-4.548 4.546-4.587-1.416-1.403-4.545 4.589-4.588-4.543-1.405 1.405 4.593 4.552-4.547 4.592 1.405 1.405 4.555-4.596 4.591 4.55 1.403-1.416z"
-                                                                ></path>
-                                                            </svg>
-                                                        </td>
-                                                        <td class="table__cell" role="cell">
-                                                            <svg v-if='content.ib' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                                                <path
-                                                                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.959 17l-4.5-4.319 1.395-1.435 3.08 2.937 7.021-7.183 1.422 1.409-8.418 8.591z"
-                                                                ></path>
-                                                            </svg>
-                                                             <svg v-if='!content.ib' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                                                <path
-                                                                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.538l-4.592-4.548 4.546-4.587-1.416-1.403-4.545 4.589-4.588-4.543-1.405 1.405 4.593 4.552-4.547 4.592 1.405 1.405 4.555-4.596 4.591 4.55 1.403-1.416z"
-                                                                ></path>
-                                                            </svg>
-                                                        </td>
-                                                        <td class="table__cell" role="cell">
-                                                           <svg v-if='content.btec' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                                                <path
-                                                                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.959 17l-4.5-4.319 1.395-1.435 3.08 2.937 7.021-7.183 1.422 1.409-8.418 8.591z"
-                                                                ></path>
-                                                            </svg>
-                                                             <svg v-if='!content.btec' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                                                <path
-                                                                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.538l-4.592-4.548 4.546-4.587-1.416-1.403-4.545 4.589-4.588-4.543-1.405 1.405 4.593 4.552-4.547 4.592 1.405 1.405 4.555-4.596 4.591 4.55 1.403-1.416z"
-                                                                ></path>
-                                                            </svg>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="table__row" v-for='(row,idx) in content.sixcoltable' v-bind:key='idx'>
-                                                        <td class="table__cell" role="cell" v-if="row.col1" v-html="$md.render(row.col1)">
-                                                        
-                                                        </td>
-
-                                                        <td class="table__cell" role="cell" v-if="row.col2" v-html="$md.render(row.col2)">
-                                                        
-                                                        </td>
-                                                        <td class="table__cell" role="cell" v-if="row.col3" v-html="$md.render(row.col3)">
-                                                        
-                                                        </td>
-                                                        <td class="table__cell" role="cell" v-if="row.col4" v-html="$md.render(row.col4)">
-                                                        
-                                                        </td>
-                                                        <td class="table__cell" role="cell" v-if="row.col5" v-html="$md.render(row.col5)">
-                                                        
-                                                        </td>
-                                                        <td class="table__cell" role="cell" v-if="row.col6" v-html="$md.render(row.col6)">
-                                                        
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-
                                       
                                           </div>
                                   
@@ -494,7 +357,7 @@ data(){
     }
   },
   async asyncData({ $axios, params }) {
-    const articles = await $axios.$get(process.env.backendurl+'boarding-schools?slug='+params.slug)
+    const articles = await $axios.$get(process.env.backendurl+'foundations?slug='+params.slug)
     let article = articles[0];
     return { article }
   },

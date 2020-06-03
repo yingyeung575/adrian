@@ -1,13 +1,14 @@
 <template>
     <div>
 
+   
       <!-- popup search -->
       <div v-if='!selectedsubject' class="modal modal--select js-modal modal--is-visible modalblock" id="modal-select" role="dialog" aria-labelledby="modal-select-label" data-animation="on">
          
 
               
                 <div class="vvcenter max-width-xs text-center padding-md" role="alertdialog" tabindex="-1" aria-labelledby="modal-select-title" aria-describedby="">
-                  <h3 class="margin-bottom-sm text-xxxl ls4">請選擇你的科目{{ $route.query.subject }}</h3>
+                  <h3 class="margin-bottom-sm text-xxxl ls4">請選擇你的科目</h3>
                   <!-- steps -->
                   <div class="steps" aria-label="Multi-step indicator">
                     <ol class="steps__list">
@@ -43,8 +44,8 @@
                   <ul class="margin-top-xl text-center full-screen-select__list js-full-screen-select__list" role="listbox">
                   
                     <li v-for='(subject, idx) in showsubjects' v-bind:key="idx">
-                      <a href="#0" v-if='idx==0' class="full-screen-select__option full-screen-select__option--selected" role="option" @click="selectsubject('computer-science')">{{ subject.name }}</a>
-                      <a href="#0" v-if='idx!=0' class="full-screen-select__option" role="option" @click="selectsubject(subject.slug)">{{ subject.name }}</a>
+                      <nuxt-link :to="'/school-type/foundation?subject=' + subject.slug" v-if='idx==0' class="full-screen-select__option full-screen-select__option--selected" role="option">{{ subject.name }}</nuxt-link>
+                      <nuxt-link :to="'/school-type/foundation?subject=' + subject.slug" v-if='idx!=0' class="full-screen-select__option" role="option">{{ subject.name }}</nuxt-link>
                     </li>
                     
                     
@@ -68,8 +69,8 @@
                     <div class="select">
                       <select class="select__input form-control rightfilter" v-model="selectedsubject">
                      
-                          <option v-for='(subject, idx) in showsubjects' v-bind:key="idx" v-bind:value="subject.slug">{{ subject.name }}</option>
-                      
+                          <option value="computer-science">電腦科學</option>
+                          <option value="media-communication">傳播媒體</option>
                                            
                       </select>
                       
@@ -178,30 +179,30 @@
             <!-- start main content -->
             <nav class="s-tabs padding-top-sm padding-left-sm">
               <ul class="s-tabs__list">
-                <li><nuxt-link  to="/school-type/foundation/step2">大學基礎班</nuxt-link></li>
-                <li><nuxt-link to="/school-type/boarding-school">寄宿學校</nuxt-link></li>
-                <li><nuxt-link class="s-tabs__item--selected" to="/school-type/university/step2">大學</nuxt-link></li>
-                <li><nuxt-link to="/school-type/international-one/step2">國際一年級</nuxt-link></li>
-                <li><nuxt-link to="/school-type/summer-school">夏季學校</nuxt-link></li>
+                <li><a href="#0">大學基礎班</a></li>
+                <li><a href="#0">寄宿學校</a></li>
+                <li aria-current="page"><a href="#0" class="s-tabs__item--selected">大學</a></li>
+                <li><a href="#0">國際一年級</a></li>
+                <li><a href="#0">夏季學校</a></li>
               </ul>
               
             </nav>
             
             <div class="text-component">
 
-              <div  v-for='(list,idx) in filteredList' v-bind:key="idx">
-                  <div class='mschool' v-if='showing > idx'>
+              <div class='mschool' v-for='(list,idx) in filteredList' v-bind:key="idx">
+                  
                     <div class="grid grid-gap-md">
                         <div class="text-left col-7@md padding-y-md padding-x-lg">
-                          <nuxt-link class='nodecor' :to="'/university-school/' + list.university.slug">
+                          <a class='nodecor' :href="'/university-school/' + list.university.slug">
                           <img :src='backendurl  + list.university.image.url' width='100' v-if='list.university.image'>
-                          <h4 class="color-primary"><span class="padding-left-xxxs">{{list.university.name}}</span></h4>
+                          <h4 class="color-primary"><span class="padding-left-xxxs"></span>{{list.university.name}}</span></h4>
                           <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 2c3.196 0 6 2.618 6 5.602 0 3.093-2.493 7.132-6 12.661-3.507-5.529-6-9.568-6-12.661 0-2.984 2.804-5.602 6-5.602m0-2c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>{{list.university.address}}</p>
                           <p>{{list.university.excerpt}}</p>
-                          </nuxt-link>
-                          <nuxt-link :to="'/university-school/' + list.university.slug" class="btn  btn--subtle btn--sm">查看大學</nuxt-link>
-                          <nuxt-link v-if='list.university.isfoundation' :to="'/university-school/' + list.university.slug" class="margin-left-sm btn btn--primary btn--sm">查看Foundation</nuxt-link>
-                          <nuxt-link v-if='list.university.isinternational1' :to="'/university-school/' + list.university.slug" class="margin-left-sm btn btn--accent btn--sm">查看International Year 1</nuxt-link>
+                          </a>
+                          <a :href="'/university-school/' + list.university.slug" class="btn  btn--subtle btn--sm">查看大學</a>
+                          <a :href="'/university-school/' + list.university.slug" class="margin-left-sm btn btn--primary btn--sm">查看Foundation</a>
+                          <a :href="'/university-school/' + list.university.slug" class="margin-left-sm btn btn--accent btn--sm">查看International Year 1</a>
                         </div>
                         <div class="col-5@md">
                           <div class="jschollright padding-top-xs">
@@ -231,7 +232,7 @@
                           </div>
                         </div>
                     </div>
-                  </div>
+                 
                 </div>
                 <!-- end mschool -->
                
@@ -279,12 +280,8 @@
                     </ol>
                   </nav>
                   -->
-                   <div v-if='arraylength > showing' class="width-100 text-center padding-bottom-lg" @click='showmore'>
-                   <a class="btn btn--accent">顯示更多</a>
-                   <br>
-                   </div>
-                   <p class='noresult padding-top-sm padding-left-sm text-md' v-if='loading'>請稍等。資料更新中....<img class='loadingicon' src='/img/loading.svg'></p>
-                   <p class='noresult padding-top-sm padding-left-sm text-md' v-if="filteredList==''&&!loading">不好意思，沒有找到相關結果</p>
+
+                   <p class='noresult padding-top-sm padding-left-sm text-md' v-if="filteredList==''">不好意思，沒有找到相關結果</p>
 
 
             </div>
@@ -301,53 +298,31 @@
     </div>
 </template>
 
+
 <script>
-import Cookies from 'js-cookie'
-import { mapMutations } from 'vuex' 
 export default {
   data(){
     return{
        backendurl : process.env.backendurl,
        frontendurl : process.env.frontendurl,
-       selectedsubject: this.$route.query.subject,
-       sort: 'rankhigh',
-       showing: 10,
-       arraylength: 0,
-       loading: true,
-       subjects: null
+       selectedsubject: '',
+       typequery : '',
+       filter1: [],
+       sort: 'rankhigh'
 
     }
   },
   async asyncData({ $axios }) {
- //   const subjects = await $axios.$get(process.env.backendurl+'subjects?isuniversity_eq=true')
- //   return { subjects }
-  },
-  async created(){
-
-     if (this.$store.state.schools.university)
-       this.subjects = this.$store.state.schools.university
-     else{
-       this.subjects = await this.$axios.$get(process.env.backendurl+'subjects?isuniversity_eq=true') 
-       this.setUniversity(this.subjects)
-     }
-     
-     this.loading = false
+    const subjects = await $axios.$get(process.env.backendurl+'subjects/findmin?isfoundation_eq=true')
+    return { subjects }
   },
   methods:{
-    ...mapMutations({
-      setUniversity: 'schools/setUniversity',
-      updateuniversitytypequery: 'schools/updateuniversitytypequery',
-      updateuniversityfilter1: 'schools/updateuniversityfilter1',
-    }),
-    showmore(){
-      this.showing = this.showing + 10
-    },
     selectsubject(parax){
       this.selectedsubject = parax
     },
     checkcount( temp2 ) {
        
-        if (this.selectedsubject && this.showsubjects){
+        if (this.selectedsubject){
           let universities = this.subjects.filter(
             x => (x.slug == this.selectedsubject)
           ) 
@@ -361,7 +336,7 @@ export default {
               let z = true
               if (temp2 != '') {
                 z = x.university.option.find(element => {
-                  return temp2 == element.name 
+                  return temp2.includes(element.name)  
                 })
               }
               /* new checkbox filter check */
@@ -374,38 +349,19 @@ export default {
   },
   computed: {
 
-    typequery: {
-      get () {
-        return this.$store.state.schools.universitytypequery
-      },
-      set (value) {
-        this.updateuniversitytypequery(value)
-      }
-    },
-    filter1: {
-      get () {
-        return this.$store.state.schools.universityfilter1
-      },
-      set (value) {
-        this.updateuniversityfilter1(value)
-      }
-    },
     showsubjects(){
-      if (this.subjects){
-        let unisubjects = this.subjects.filter( x => x.isuniversity == true)
-        return unisubjects
-      }
+      let unisubjects = this.subjects.filter( x => x.isfoundation == true)
+      return unisubjects
     },
     // Search system
     filteredList() {
-      if (this.selectedsubject && this.showsubjects){
+      if (this.selectedsubject){
         let universities = this.subjects.filter(
           x => (x.slug == this.selectedsubject)
         ) 
         let funiversities = universities[0].universityranking
         let temp = this.typequery
         let temp2 = this.filter1
-        
         funiversities = funiversities.filter(
           
           x => {
@@ -423,15 +379,7 @@ export default {
           }
         ) 
 
-        this.arraylength = funiversities.length
         /* sorting */
-
-        if (this.sort=='rankhigh'){
-          funiversities.sort( ( a, b ) => {
-              return a.rank - b.rank;
-          });
-     
-        }
         if (this.sort=='ranklow'){
           funiversities.sort( ( a, b ) => {
               return a.rank - b.rank;
@@ -456,25 +404,7 @@ export default {
         return funiversities
       }
     },
-  },
-  /*
-  updated: function(){
-     
-      Cookies.set('universityTypequery', this.typequery) 
-      Cookies.set('universityFilter1', this.filter1)
-
-  },
-  beforeMount: function(){
-
-      if (Cookies.get('universityTypequery'))
-      this.typequery = Cookies.get('universityTypequery')
-      if (Cookies.get('universityFilter1')){
-      let tempFilter = JSON.parse(Cookies.get('universityFilter1'))
-      this.filter1 = tempFilter
-      }
-
   }
-  */
 }
 
 </script>
